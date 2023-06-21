@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\localRepository\maven_repository\repository_3.8.6" />
+        <option name="mavenHome" value="E:/environment/apache/maven/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="E:\environment\apache\maven\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NPY8SW6Uc4st1BsB6fsYFxhlYW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/workpace/work_idea/sp01_javase",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day01_Introduction\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.C01EmployeeTest">
+    <configuration name="C01Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jocularchao.c01create.C01Employee" />
+      <module name="day06_class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jocularchao.c01create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C01EmployeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jocularchao.c01create.C01EmployeeTest" />
+      <module name="day06_class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jocularchao.c01create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chao.a03exercise.Demo1" />
+      <module name="day03_string" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chao.a03exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chao.a03exercise.Demo3" />
+      <module name="day03_string" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chao.a03exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAPI4CompareTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chao.a02methods.StringAPI4CompareTo" />
+      <module name="day03_string" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chao.a02methods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.C01EmployeeTest" />
+        <item itemvalue="Application.C01Employee" />
+        <item itemvalue="Application.Demo3" />
+        <item itemvalue="Application.Demo1" />
+        <item itemvalue="Application.StringAPI4CompareTo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="" />
+      <created>1679567025699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679567025699</updated>
+      <workItem from="1679567027281" duration="4151000" />
+      <workItem from="1679826005268" duration="2260000" />
+      <workItem from="1680001473328" duration="3454000" />
+      <workItem from="1680390198481" duration="611000" />
+      <workItem from="1680938655278" duration="4830000" />
+      <workItem from="1681011804732" duration="6866000" />
+      <workItem from="1681294706096" duration="3453000" />
+      <workItem from="1681393550028" duration="428000" />
+      <workItem from="1681474668420" duration="1940000" />
+      <workItem from="1681519818441" duration="51000" />
+      <workItem from="1681550138603" duration="2552000" />
+      <workItem from="1681639814367" duration="1284000" />
+      <workItem from="1681736896740" duration="358000" />
+      <workItem from="1681902301660" duration="2915000" />
+      <workItem from="1681910066475" duration="1896000" />
+      <workItem from="1682216772119" duration="1924000" />
+      <workItem from="1682239906758" duration="1378000" />
+      <workItem from="1682245414841" duration="1311000" />
+      <workItem from="1682248988696" duration="4584000" />
+      <workItem from="1682309946660" duration="1277000" />
+      <workItem from="1682326800695" duration="6228000" />
+      <workItem from="1682340576179" duration="70000" />
+      <workItem from="1682342092460" duration="2122000" />
+      <workItem from="1682392258505" duration="1303000" />
+      <workItem from="1682849802567" duration="1314000" />
+      <workItem from="1682911738759" duration="3015000" />
+      <workItem from="1682950594192" duration="155000" />
+      <workItem from="1684160511524" duration="783000" />
+      <workItem from="1684245889917" duration="91000" />
+      <workItem from="1685714802510" duration="270000" />
+      <workItem from="1686573091121" duration="6279000" />
+      <workItem from="1686639630807" duration="114000" />
+      <workItem from="1686889332237" duration="5669000" />
+      <workItem from="1687231294012" duration="20000" />
+      <workItem from="1687231551914" duration="3778000" />
+      <workItem from="1687242616854" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

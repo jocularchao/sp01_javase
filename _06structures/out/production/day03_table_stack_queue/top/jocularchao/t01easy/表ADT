@@ -1,0 +1,9 @@
+表的大小为N
+则有A 0~A N-1 很容易以数组形式创建
+常见 printList makeEmpty
+方法：
+find
+insert
+remove
+update
+形式:普通链表、单链表、双链表
