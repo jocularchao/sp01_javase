@@ -109,7 +109,8 @@ public class CollectionTest implements Collection {
         return new Object[0];
     }
 
-    //
+    //公共方法
+    //打印任意集合中所有的项
     public static<String> void print(Collection<String> coll){
         for (String item :
                 coll) {
