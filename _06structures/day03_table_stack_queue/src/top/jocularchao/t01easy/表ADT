@@ -1,9 +1,12 @@
 表的大小为N
 则有A 0~A N-1 很容易以数组形式创建
 常见 printList makeEmpty
-方法：
-find
-insert
-remove
-update
-形式:普通链表、单链表、双链表
+常用方法:
+printList()         打印
+makeEmpty()         根本性地清空
+add(element)        在表末尾添加元素
+add(element,index)  在索引处添加元素
+set(element,index)  插入
+remove(index)       删除
+size()              列表大小
+get()               返回但不删除
