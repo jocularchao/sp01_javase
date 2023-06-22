@@ -115,6 +115,7 @@ public class CollectionTest implements Collection {
         for (String item :
                 coll) {
             System.out.println(item);
+
         }
     }
 }
