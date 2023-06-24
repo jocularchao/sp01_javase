@@ -45,15 +45,29 @@ public class T01EasyArray<AnyType> {
     }
 
     public void add(AnyType element){
+        if(size>=data.length){
+            expandStorage();
+        }
         data[size]=element;
         //当添加一个对象时size会变大
         size++;
+    }
+
+    //构建数组扩展数据
+    private void expandStorage() {
+        //在重复扩展数据和分配过大空间之间找到一个快乐的媒介  1.5
+        int expendsSize =size+size/2+1;
+        Object[] expandedData = new Object[expendsSize];
+        this.data = expandedData;
     }
 
     public AnyType get(int index){
         return (AnyType) this.data[index];
     }
 
+    public void printList(){
+
+    }
     //测试
     public static void main(String[] args) {
         /*//创建arr数组
@@ -67,7 +81,7 @@ public class T01EasyArray<AnyType> {
         }
         arr = newArr;*/
         //创建对象
-        T01EasyArray<String> list = new T01EasyArray<>(20);
+        T01EasyArray<String> list = new T01EasyArray<>();
         //添加20个元素
         for (int i = 0; i < 20; i++) {
             String temp = "Jocular #"+i;
