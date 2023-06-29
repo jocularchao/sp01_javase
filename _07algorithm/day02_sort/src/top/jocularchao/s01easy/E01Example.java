@@ -38,7 +38,7 @@ public class E01Example {
     }
 
     public static void main(String[] args) {
-        Integer a[] = {1,3,2};
+        Integer a[] = {6,5,4,3,2,1};
         sort(a);
         assert isSorted(a);
         show(a);
