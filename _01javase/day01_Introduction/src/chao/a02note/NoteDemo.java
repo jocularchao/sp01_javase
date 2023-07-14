@@ -4,7 +4,7 @@ package chao.a02note;
  * @author: zwking
  * @E-mail: zwyc16@163.com
  * @Date: 2022-01-04 18:02
- * 目标：掌握注释的使用。
+ * @description: 掌握注释的使用。
  */
 public class NoteDemo {
     /**

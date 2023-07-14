@@ -9,7 +9,10 @@ java基础知识点
 算法题
 面试题等等
 
+About my learning of java se, such as: java basic knowledge points, multithreading, data structure and Analysis of algorithms, small practical exercises, algorithm questions, interview questions, etc
+
 #### 软件架构
+
 软件架构说明
 
 

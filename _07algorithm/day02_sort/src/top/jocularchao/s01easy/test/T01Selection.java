@@ -5,7 +5,7 @@ package top.jocularchao.s01easy.test;
  *
  * @author JocularChao
  * @date 2023/6/29 19:22
- * @Description 用选择排序将  排序. ·
+ * @Description 用选择排序将  排序
  */
 public class T01Selection {
     public static void sort(Comparable[] a){
