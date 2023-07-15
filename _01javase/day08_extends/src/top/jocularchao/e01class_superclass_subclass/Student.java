@@ -10,6 +10,9 @@ public class Student extends People{
         super(name,age);
         this.id = id;
     }
+    public String getName(){
+        return "s "+super.getName();
+    }
 
     /**
        独有的行为
