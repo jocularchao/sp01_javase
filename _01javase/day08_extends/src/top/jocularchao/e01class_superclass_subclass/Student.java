@@ -1,6 +1,16 @@
 package top.jocularchao.e01class_superclass_subclass;
 
 public class Student extends People{
+    private long id = 123456789L;
+
+    public Student() {
+    }
+
+    public Student(String name,int age,long id) {
+        super(name,age);
+        this.id = id;
+    }
+
     /**
        独有的行为
      */
