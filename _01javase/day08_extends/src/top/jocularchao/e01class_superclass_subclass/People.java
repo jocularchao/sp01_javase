@@ -27,4 +27,8 @@ public class People {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void study(){
+        System.out.println(getName()+"开始学习");
+    }
 }
