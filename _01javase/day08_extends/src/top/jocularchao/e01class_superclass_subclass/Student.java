@@ -7,6 +7,7 @@ public class Student extends People{
     }
 
     public Student(String name,int age,long id) {
+        //super必须是第一条语句
         super(name,age);
         this.id = id;
     }
