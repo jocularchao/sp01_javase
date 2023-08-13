@@ -26,9 +26,4 @@ public class Student {
                 ", age=" + age +
                 '}';
     }
-
-    public static void main(String[] args) {
-        Student student = new Student(2011, "12", 20);
-        System.out.println(student.toString());
-    }
 }
