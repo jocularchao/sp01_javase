@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="" />
+    <list default="true" id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="事务">
+      <change afterPath="$PROJECT_DIR$/day15_xml/src/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../javase.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +20,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,41 +41,53 @@
     </option>
   </component>
   <component name="ProjectId" id="2NPY8SW6Uc4st1BsB6fsYFxhlYW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/workpace/work_idea/sp01_javase",
+    "last_opened_file_path": "D:/workpace/work_idea/sp01_javase/_01javase/day17_jdbc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day17_jdbc" />
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase" />
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day08_extends\src\top\jocularchao\e01class_superclass_subclass" />
       <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day01_Introduction\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.C01EmployeeTest">
-    <configuration name="C01Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jocularchao.c01create.C01Employee" />
-      <module name="day06_class" />
+  <component name="RunManager" selected="Application.XMLReader">
+    <configuration name="JDBC04ResultSet1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC04ResultSet1" />
+      <module name="day17_jdbc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jocularchao.c01create.*" />
+          <option name="PATTERN" value="top.jocularchao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C01EmployeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jocularchao.c01create.C01EmployeeTest" />
-      <module name="day06_class" />
+    <configuration name="JDBC05SQLInject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC05SQLInject" />
+      <module name="day17_jdbc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jocularchao.c01create.*" />
+          <option name="PATTERN" value="top.jocularchao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chao.a03exercise.Demo1" />
-      <module name="day03_string" />
+    <configuration name="JDBC06NoInject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC06NoInject" />
+      <module name="day17_jdbc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chao.a03exercise.*" />
+          <option name="PATTERN" value="top.jocularchao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chao.a03exercise.Demo3" />
-      <module name="day03_string" />
+    <configuration name="JDBC07Transactions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC07Transactions" />
+      <module name="day17_jdbc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chao.a03exercise.*" />
+          <option name="PATTERN" value="top.jocularchao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAPI4CompareTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chao.a02methods.StringAPI4CompareTo" />
-      <module name="day03_string" />
+    <configuration name="XMLReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.XMLReader" />
+      <module name="day15_xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chao.a02methods.*" />
+          <option name="PATTERN" value="top.jocularchao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.C01EmployeeTest" />
-        <item itemvalue="Application.C01Employee" />
-        <item itemvalue="Application.Demo3" />
-        <item itemvalue="Application.Demo1" />
-        <item itemvalue="Application.StringAPI4CompareTo" />
+        <item itemvalue="Application.XMLReader" />
+        <item itemvalue="Application.JDBC07Transactions" />
+        <item itemvalue="Application.JDBC06NoInject" />
+        <item itemvalue="Application.JDBC05SQLInject" />
+        <item itemvalue="Application.JDBC04ResultSet1" />
       </list>
     </recent_temporary>
   </component>
@@ -183,11 +201,435 @@
       <workItem from="1687231294012" duration="20000" />
       <workItem from="1687231551914" duration="3778000" />
       <workItem from="1687242616854" duration="6000" />
+      <workItem from="1687944000013" duration="2144000" />
+      <workItem from="1688006505472" duration="1089000" />
+      <workItem from="1689305445161" duration="12298000" />
+      <workItem from="1689390853102" duration="5550000" />
+      <workItem from="1690281679082" duration="3313000" />
+      <workItem from="1691576417386" duration="9000" />
+      <workItem from="1691770346855" duration="154000" />
+      <workItem from="1691813145495" duration="1637000" />
+      <workItem from="1691827759693" duration="9756000" />
+      <workItem from="1691899497374" duration="11053000" />
+      <workItem from="1691983735217" duration="2476000" />
     </task>
+    <task id="LOCAL-00001" summary="jar笔记">
+      <option name="closed" value="true" />
+      <created>1689305665260</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305665260</updated>
+    </task>
+    <task id="LOCAL-00002" summary="删除">
+      <option name="closed" value="true" />
+      <created>1689305706895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305706895</updated>
+    </task>
+    <task id="LOCAL-00003" summary="jar笔记">
+      <option name="closed" value="true" />
+      <created>1689305730788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305730788</updated>
+    </task>
+    <task id="LOCAL-00004" summary="jar笔记">
+      <option name="closed" value="true" />
+      <created>1689305964431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305964431</updated>
+    </task>
+    <task id="LOCAL-00005" summary="jar笔记">
+      <option name="closed" value="true" />
+      <created>1689305971790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305971790</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ceshi">
+      <option name="closed" value="true" />
+      <created>1689305983287</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689305983287</updated>
+    </task>
+    <task id="LOCAL-00007" summary="jar笔记">
+      <option name="closed" value="true" />
+      <created>1689307091222</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689307091222</updated>
+    </task>
+    <task id="LOCAL-00008" summary="javadoc笔记">
+      <option name="closed" value="true" />
+      <created>1689331271477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331271477</updated>
+    </task>
+    <task id="LOCAL-00009" summary="javadoc测试用例">
+      <option name="closed" value="true" />
+      <created>1689331289194</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331289194</updated>
+    </task>
+    <task id="LOCAL-00010" summary="joop设计技巧">
+      <option name="closed" value="true" />
+      <created>1689331575598</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331575598</updated>
+    </task>
+    <task id="LOCAL-00011" summary="目录">
+      <option name="closed" value="true" />
+      <created>1689331929224</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331929224</updated>
+    </task>
+    <task id="LOCAL-00012" summary="包、jar、javadoc">
+      <option name="closed" value="true" />
+      <created>1689331943547</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331943547</updated>
+    </task>
+    <task id="LOCAL-00013" summary="测试">
+      <option name="closed" value="true" />
+      <created>1689331956038</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689331956038</updated>
+    </task>
+    <task id="LOCAL-00014" summary="继承">
+      <option name="closed" value="true" />
+      <created>1689333029313</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689333029313</updated>
+    </task>
+    <task id="LOCAL-00015" summary="父类">
+      <option name="closed" value="true" />
+      <created>1689417916924</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689417916924</updated>
+    </task>
+    <task id="LOCAL-00016" summary="测试">
+      <option name="closed" value="true" />
+      <created>1689417927416</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1689417927416</updated>
+    </task>
+    <task id="LOCAL-00017" summary="学生类">
+      <option name="closed" value="true" />
+      <created>1689417937887</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1689417937887</updated>
+    </task>
+    <task id="LOCAL-00018" summary="superclass">
+      <option name="closed" value="true" />
+      <created>1689418063845</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689418063845</updated>
+    </task>
+    <task id="LOCAL-00019" summary="student">
+      <option name="closed" value="true" />
+      <created>1689418209846</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1689418209846</updated>
+    </task>
+    <task id="LOCAL-00020" summary="superclass">
+      <option name="closed" value="true" />
+      <created>1689418218487</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689418218487</updated>
+    </task>
+    <task id="LOCAL-00021" summary="superclass">
+      <option name="closed" value="true" />
+      <created>1689418285656</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1689418285656</updated>
+    </task>
+    <task id="LOCAL-00022" summary="学生类">
+      <option name="closed" value="true" />
+      <created>1689423884563</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1689423884563</updated>
+    </task>
+    <task id="LOCAL-00023" summary="xml笔记">
+      <option name="closed" value="true" />
+      <created>1690282934255</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690282934255</updated>
+    </task>
+    <task id="LOCAL-00024" summary="xml">
+      <option name="closed" value="true" />
+      <created>1690282939112</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690282939112</updated>
+    </task>
+    <task id="LOCAL-00025" summary="目录">
+      <option name="closed" value="true" />
+      <created>1691827878306</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1691827878306</updated>
+    </task>
+    <task id="LOCAL-00026" summary="java设计模式笔记">
+      <option name="closed" value="true" />
+      <created>1691827889489</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1691827889490</updated>
+    </task>
+    <task id="LOCAL-00027" summary="java设计模式笔记">
+      <option name="closed" value="true" />
+      <created>1691827894089</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1691827894089</updated>
+    </task>
+    <task id="LOCAL-00028" summary="jbdc jar包">
+      <option name="closed" value="true" />
+      <created>1691827905974</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691827905974</updated>
+    </task>
+    <task id="LOCAL-00029" summary="jbdc jar包">
+      <option name="closed" value="true" />
+      <created>1691838785959</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1691838785959</updated>
+    </task>
+    <task id="LOCAL-00030" summary="入门JDBC">
+      <option name="closed" value="true" />
+      <created>1691847637837</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1691847637837</updated>
+    </task>
+    <task id="LOCAL-00031" summary="入门JDBC">
+      <option name="closed" value="true" />
+      <created>1691847652849</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1691847652849</updated>
+    </task>
+    <task id="LOCAL-00032" summary="笔记">
+      <option name="closed" value="true" />
+      <created>1691847664100</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1691847664100</updated>
+    </task>
+    <task id="LOCAL-00033" summary="入门JDBC">
+      <option name="closed" value="true" />
+      <created>1691847715349</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1691847715349</updated>
+    </task>
+    <task id="LOCAL-00034" summary="入门JDBC">
+      <option name="closed" value="true" />
+      <created>1691923670638</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1691923670638</updated>
+    </task>
+    <task id="LOCAL-00035" summary="DML DDL">
+      <option name="closed" value="true" />
+      <created>1691923689474</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1691923689474</updated>
+    </task>
+    <task id="LOCAL-00036" summary="DML DDL">
+      <option name="closed" value="true" />
+      <created>1691925874601</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1691925874601</updated>
+    </task>
+    <task id="LOCAL-00037" summary="DQL">
+      <option name="closed" value="true" />
+      <created>1691925886725</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1691925886725</updated>
+    </task>
+    <task id="LOCAL-00038" summary="批处理操作">
+      <option name="closed" value="true" />
+      <created>1691925898467</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1691925898467</updated>
+    </task>
+    <task id="LOCAL-00039" summary="git忽略文件">
+      <option name="closed" value="true" />
+      <created>1691926675037</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1691926675037</updated>
+    </task>
+    <task id="LOCAL-00040" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+      <option name="closed" value="true" />
+      <created>1691926690968</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1691926690968</updated>
+    </task>
+    <task id="LOCAL-00041" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+      <option name="closed" value="true" />
+      <created>1691926810066</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1691926810066</updated>
+    </task>
+    <task id="LOCAL-00042" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+      <option name="closed" value="true" />
+      <created>1691927472463</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1691927472463</updated>
+    </task>
+    <task id="LOCAL-00043" summary="用作查询结果映射对象  利用反射机制优化">
+      <option name="closed" value="true" />
+      <created>1691927491877</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1691927491877</updated>
+    </task>
+    <task id="LOCAL-00044" summary="忽略文件配置">
+      <option name="closed" value="true" />
+      <created>1691927504686</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1691927504686</updated>
+    </task>
+    <task id="LOCAL-00045" summary="用作查询结果映射对象 利用反射机制优化">
+      <option name="closed" value="true" />
+      <created>1691929047201</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1691929047201</updated>
+    </task>
+    <task id="LOCAL-00046" summary="SQL注入">
+      <option name="closed" value="true" />
+      <created>1691983766391</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1691983766391</updated>
+    </task>
+    <task id="LOCAL-00047" summary="SQL预编译防止sql注入">
+      <option name="closed" value="true" />
+      <created>1691983778657</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1691983778657</updated>
+    </task>
+    <task id="LOCAL-00048" summary="事务">
+      <option name="closed" value="true" />
+      <created>1691983793738</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1691983793738</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="包、jar、javadoc" />
+    <MESSAGE value="继承" />
+    <MESSAGE value="父类" />
+    <MESSAGE value="测试" />
+    <MESSAGE value="student" />
+    <MESSAGE value="superclass" />
+    <MESSAGE value="学生类" />
+    <MESSAGE value="xml笔记" />
+    <MESSAGE value="xml" />
+    <MESSAGE value="目录" />
+    <MESSAGE value="java设计模式笔记" />
+    <MESSAGE value="jbdc jar包" />
+    <MESSAGE value="笔记" />
+    <MESSAGE value="入门JDBC" />
+    <MESSAGE value="DML DDL" />
+    <MESSAGE value="DQL" />
+    <MESSAGE value="批处理操作" />
+    <MESSAGE value="git忽略文件" />
+    <MESSAGE value="用作查询结果映射对象 对应jdbc_test库中student表" />
+    <MESSAGE value="用作查询结果映射对象  利用反射机制优化" />
+    <MESSAGE value="忽略文件配置" />
+    <MESSAGE value="用作查询结果映射对象 利用反射机制优化" />
+    <MESSAGE value="SQL注入" />
+    <MESSAGE value="SQL预编译防止sql注入" />
+    <MESSAGE value="事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="事务" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/_06structures.iml" filepath="$PROJECT_DIR$/.idea/_06structures.iml" />
       <module fileurl="file://$PROJECT_DIR$/day03_table_stack_queue/day03_table_stack_queue.iml" filepath="$PROJECT_DIR$/day03_table_stack_queue/day03_table_stack_queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_tree/day04_tree.iml" filepath="$PROJECT_DIR$/day04_tree/day04_tree.iml" />
     </modules>
   </component>
 </project>

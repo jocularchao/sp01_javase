@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1acddebd-70f1-4508-a4d3-cc1f73270cd4" name="Changes" comment="" />
+    <list default="true" id="1acddebd-70f1-4508-a4d3-cc1f73270cd4" name="Changes" comment="普通数组构建表">
+      <change beforePath="$PROJECT_DIR$/day03_table_stack_queue/src/top/jocularchao/t01easy/T01EasyArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03_table_stack_queue/src/top/jocularchao/t01easy/T01EasyArray.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +23,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -31,12 +39,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2RSKWpxWuJnlRixIK4OwVsvrjVV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
@@ -49,7 +61,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.T01EasyArray">
+    <configuration name="T01EasyArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.t01easy.T01EasyArray" />
+      <module name="day03_table_stack_queue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.jocularchao.t01easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T02LinkedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.jocularchao.t01easy.T02LinkedTest" />
       <module name="day03_table_stack_queue" />
@@ -65,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T01EasyArray" />
         <item itemvalue="Application.T02LinkedTest" />
       </list>
     </recent_temporary>
@@ -81,10 +107,136 @@
       <workItem from="1687242689569" duration="74000" />
       <workItem from="1687249845111" duration="6289000" />
       <workItem from="1687317271654" duration="3460000" />
+      <workItem from="1687360732547" duration="710000" />
+      <workItem from="1687404213790" duration="5470000" />
+      <workItem from="1687431569582" duration="3477000" />
+      <workItem from="1687490100932" duration="3179000" />
+      <workItem from="1687579075049" duration="5894000" />
+      <workItem from="1687663533632" duration="3794000" />
+      <workItem from="1687688163359" duration="1938000" />
+      <workItem from="1687749394068" duration="6131000" />
+      <workItem from="1687837142268" duration="9947000" />
     </task>
+    <task id="LOCAL-00001" summary="Collection接口 打印方法">
+      <option name="closed" value="true" />
+      <created>1687360888688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687360888688</updated>
+    </task>
+    <task id="LOCAL-00002" summary="树tree">
+      <option name="closed" value="true" />
+      <created>1687361255697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687361255697</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Iterator接口">
+      <option name="closed" value="true" />
+      <created>1687425299987</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687425299987</updated>
+    </task>
+    <task id="LOCAL-00004" summary="List接口">
+      <option name="closed" value="true" />
+      <created>1687431448337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687431448337</updated>
+    </task>
+    <task id="LOCAL-00005" summary="List接口">
+      <option name="closed" value="true" />
+      <created>1687431581268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687431581268</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Iterable接口">
+      <option name="closed" value="true" />
+      <created>1687431599331</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687431599331</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Iterable接口">
+      <option name="closed" value="true" />
+      <created>1687431606673</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687431606673</updated>
+    </task>
+    <task id="LOCAL-00008" summary="简述与常用方法">
+      <option name="closed" value="true" />
+      <created>1687437081868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687437081868</updated>
+    </task>
+    <task id="LOCAL-00009" summary="笔记">
+      <option name="closed" value="true" />
+      <created>1687437429032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687437429032</updated>
+    </task>
+    <task id="LOCAL-00010" summary="概述和常用方法">
+      <option name="closed" value="true" />
+      <created>1687437450104</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687437450104</updated>
+    </task>
+    <task id="LOCAL-00011" summary="普通数组构建表">
+      <option name="closed" value="true" />
+      <created>1687493396364</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687493396364</updated>
+    </task>
+    <task id="LOCAL-00012" summary="普通数组构建表">
+      <option name="closed" value="true" />
+      <created>1687589658693</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687589658693</updated>
+    </task>
+    <task id="LOCAL-00013" summary="普通数组构建表">
+      <option name="closed" value="true" />
+      <created>1687848342519</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687848342519</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Collection接口 打印方法" />
+    <MESSAGE value="树tree" />
+    <MESSAGE value="Iterator接口" />
+    <MESSAGE value="List接口" />
+    <MESSAGE value="Iterable接口" />
+    <MESSAGE value="简述与常用方法" />
+    <MESSAGE value="笔记" />
+    <MESSAGE value="概述和常用方法" />
+    <MESSAGE value="普通数组构建表" />
+    <option name="LAST_COMMIT_MESSAGE" value="普通数组构建表" />
   </component>
 </project>
