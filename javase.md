@@ -4,6 +4,10 @@
 
 alt + F8 评估表达式
 
+ctrl+alt+shift+u 查看类的关系图
+
+
+
 
 
 ## 0 jdk
@@ -191,6 +195,381 @@ public class Main {
 1. 数组的大小是固定的，集合的大小是可变的
 2. 数组可以存放基本数据类型，但集合只能存放对象
 3. 数组存放的类型只能是一种，但集合可以有不同种类的元素
+
+###  集合根接口
+
+​	Java中已经帮我们将常用的集合类型都实现好了，我们只需要直接拿来用就行了
+
+```java
+package top.jocularchao.l01start;
+
+import java.util.ArrayList;//集合类基本都是在java.util包下定义的
+
+/**
+ * Create with IntelliJ IDEA.
+ *
+ * @author JocularChao
+ * @date 2023/8/25 21:31
+ * @Description
+ */
+public class Demo {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("666");
+    }
+}
+
+```
+
+这里用到了ArrayList类，我们查看它的类关系图来进一步学习：
+
+![idea64_jYfnkeOhyO](./javase/idea64_jYfnkeOhyO.png)
+
+Collection接口就是集合的根接口，它定义了集合类的一些基本操作，源码分析：
+
+```java
+public interface Collection<E> extends Iterable<E> {
+    //-------这些是查询相关的操作----------
+
+   	//获取当前集合中的元素数量
+    int size();
+
+    //查看当前集合是否为空
+    boolean isEmpty();
+
+    //查询当前集合中是否包含某个元素
+    boolean contains(Object o);
+
+    //返回当前集合的迭代器，我们会在后面介绍
+    Iterator<E> iterator();
+
+    //将集合转换为数组的形式
+    Object[] toArray();
+
+    //支持泛型的数组转换，同上
+    <T> T[] toArray(T[] a);
+
+    //-------这些是修改相关的操作----------
+
+    //向集合中添加元素，不同的集合类具体实现可能会对插入的元素有要求，
+  	//这个操作并不是一定会添加成功，所以添加成功返回true，否则返回false
+    boolean add(E e);
+
+    //从集合中移除某个元素，同样的，移除成功返回true，否则false
+    boolean remove(Object o);
+
+
+    //-------这些是批量执行的操作----------
+
+    //查询当前集合是否包含给定集合中所有的元素
+  	//从数学角度来说，就是看给定集合是不是当前集合的子集
+    boolean containsAll(Collection<?> c);
+
+    //添加给定集合中所有的元素
+  	//从数学角度来说，就是将当前集合变成当前集合与给定集合的并集
+  	//添加成功返回true，否则返回false
+    boolean addAll(Collection<? extends E> c);
+
+    //移除给定集合中出现的所有元素，如果某个元素在当前集合中不存在，那么忽略这个元素
+  	//从数学角度来说，就是求当前集合与给定集合的差集
+  	//移除成功返回true，否则false
+    boolean removeAll(Collection<?> c);
+
+    //Java8新增方法，根据给定的Predicate条件进行元素移除操作
+    default boolean removeIf(Predicate<? super E> filter) {
+        Objects.requireNonNull(filter);
+        boolean removed = false;
+        final Iterator<E> each = iterator();   //这里用到了迭代器，我们会在后面进行介绍
+        while (each.hasNext()) {
+            if (filter.test(each.next())) {
+                each.remove();
+                removed = true;
+            }
+        }
+        return removed;
+    }
+
+    //只保留当前集合中在给定集合中出现的元素，其他元素一律移除
+  	//从数学角度来说，就是求当前集合与给定集合的交集
+  	//移除成功返回true，否则false
+    boolean retainAll(Collection<?> c);
+
+    //清空整个集合，删除所有元素
+    void clear();
+
+
+    //-------这些是比较以及哈希计算相关的操作----------
+
+    //判断两个集合是否相等
+    boolean equals(Object o);
+
+    //计算当前整个集合对象的哈希值
+    int hashCode();
+
+    //与迭代器作用相同，但是是并行执行的，我们会在下一章多线程部分中进行介绍
+    @Override
+    default Spliterator<E> spliterator() {
+        return Spliterators.spliterator(this, 0);
+    }
+
+    //生成当前集合的流，我们会在后面进行讲解
+    default Stream<E> stream() {
+        return StreamSupport.stream(spliterator(), false);
+    }
+
+    //生成当前集合的并行流，我们会在下一章多线程部分中进行介绍
+    default Stream<E> parallelStream() {
+        return StreamSupport.stream(spliterator(), true);
+    }
+}
+```
+
+### List接口
+
+​	List列表（线性表），线性表支持随机访问，相比之前的Collection接口定义，功能还会更多一些。
+
+List是集合类型的一个分支，它的主要特性有：
+
+* 是一个有序的集合，插入元素默认是插入到尾部，按顺序从前往后存放，每个元素都有一个自己的下标位置
+* 列表中允许存在重复元素
+
+在List接口中，定义了列表类型需要支持的全部操作，List直接继承自前面介绍的Collection接口，其中很多地方重新定义了一次Collection接口中定义的方法，这样做是为了更加明确方法的具体功能，当然，为了直观，我们这里就省略掉：
+
+```java
+//List是一个有序的集合类，每个元素都有一个自己的下标位置
+//List中可插入重复元素
+//针对于这些特性，扩展了Collection接口中一些额外的操作
+public interface List<E> extends Collection<E> {
+    ...
+   	
+    //将给定集合中所有元素插入到当前结合的给定位置上（后面的元素就被挤到后面去了，跟我们之前顺序表的插入是一样的）
+    boolean addAll(int index, Collection<? extends E> c);
+
+    ...
+
+   	//Java 8新增方法，可以对列表中每个元素都进行处理，并将元素替换为处理之后的结果
+    default void replaceAll(UnaryOperator<E> operator) {
+        Objects.requireNonNull(operator);
+        final ListIterator<E> li = this.listIterator();  //这里同样用到了迭代器
+        while (li.hasNext()) {
+            li.set(operator.apply(li.next()));
+        }
+    }
+
+    //对当前集合按照给定的规则进行排序操作，这里同样只需要一个Comparator就行了
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    default void sort(Comparator<? super E> c) {
+        Object[] a = this.toArray();
+        Arrays.sort(a, (Comparator) c);
+        ListIterator<E> i = this.listIterator();
+        for (Object e : a) {
+            i.next();
+            i.set((E) e);
+        }
+    }
+
+    ...
+
+    //-------- 这些是List中独特的位置直接访问操作 --------
+
+   	//获取对应下标位置上的元素
+    E get(int index);
+
+    //直接将对应位置上的元素替换为给定元素
+    E set(int index, E element);
+
+    //在指定位置上插入元素，就跟我们之前的顺序表插入是一样的
+    void add(int index, E element);
+
+    //移除指定位置上的元素
+    E remove(int index);
+
+
+    //------- 这些是List中独特的搜索操作 -------
+
+    //查询某个元素在当前列表中的第一次出现的下标位置
+    int indexOf(Object o);
+
+    //查询某个元素在当前列表中的最后一次出现的下标位置
+    int lastIndexOf(Object o);
+
+
+    //------- 这些是List的专用迭代器 -------
+
+    //迭代器我们会在下一个部分讲解
+    ListIterator<E> listIterator();
+
+    //迭代器我们会在下一个部分讲解
+    ListIterator<E> listIterator(int index);
+
+    //------- 这些是List的特殊转换 -------
+
+    //返回当前集合在指定范围内的子集
+    List<E> subList(int fromIndex, int toIndex);
+
+    ...
+}
+```
+
+
+
+
+
+#### ArrayList
+
+​	首先ArrayList，它的底层是用数组实现的，内部维护的是一个**可动态进行扩容**的数组，也就是我们之前所说的顺序表。
+
+在List接口中，扩展了大量列表支持的操作，其中最突出的就是直接根据下标位置进行的增删改查操作。而在ArrayList中，底层就是采用数组实现的，跟我们之前的顺序表思路差不多：
+
+```java
+public class ArrayList<E> extends AbstractList<E>
+        implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+{
+		
+    //默认的数组容量
+    private static final int DEFAULT_CAPACITY = 10;
+
+    ...
+
+    //存放数据的底层数组，这里的transient关键字我们会在后面I/O中介绍用途
+    transient Object[] elementData;
+
+    //记录当前数组元素数的
+    private int size;
+
+   	//这是ArrayList的其中一个构造方法
+    public ArrayList(int initialCapacity) {
+        if (initialCapacity > 0) {
+            this.elementData = new Object[initialCapacity];   //根据初始化大小，创建当前列表
+        } else if (initialCapacity == 0) {
+            this.elementData = EMPTY_ELEMENTDATA;
+        } else {
+            throw new IllegalArgumentException("Illegal Capacity: "+
+                                               initialCapacity);
+        }
+    }
+  
+  	...
+      
+   	public boolean add(E e) {
+        ensureCapacityInternal(size + 1);  // 这里会判断容量是否充足，不充足需要扩容
+        elementData[size++] = e;
+        return true;
+    }
+  	
+  	...
+    
+    //默认的列表最大长度为Integer.MAX_VALUE - 8
+    //JVM都C++实现中，在数组的对象头中有一个_length字段，用于记录数组的长
+    //度，所以这个8就是存了数组_length字段（这个只做了解就行）
+		private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+  	
+  	private void grow(int minCapacity) {
+        int oldCapacity = elementData.length;
+        int newCapacity = oldCapacity + (oldCapacity >> 1);   //扩容规则跟我们之前的是一样的，也是1.5倍
+        if (newCapacity - minCapacity < 0)    //要是扩容之后的大小还没最小的大小大，那么直接扩容到最小的大小
+            newCapacity = minCapacity;
+        if (newCapacity - MAX_ARRAY_SIZE > 0)   //要是扩容之后比最大的大小还大，需要进行大小限制
+            newCapacity = hugeCapacity(minCapacity);  //调整为限制的大小
+        elementData = Arrays.copyOf(elementData, newCapacity);   //使用copyOf快速将内容拷贝到扩容后的新数组中并设定为新的elementData底层数组
+    }
+}
+```
+
+> 注意：
+>
+> 1、注意传参问题，要是传入的是基本类型，但集合的类型是包装类，那就需要转换一下
+>
+> ```java
+> ArrayList<Integer> list1 = new ArrayList<>();
+> list1.add(20);
+> list1.remove((Integer) 20);
+> ```
+>
+> 2、即使传入的是两个不同的对象，但如果两个对象的equals方法判断相等，那依旧看作是一个对象
+>
+> ```java
+> ArrayList<Integer> list2 = new ArrayList<>();
+> list2.add(new Integer(30));
+> list2.remove(new Integer(30));
+> ```
+>
+> 这里的remove源码：
+>
+> ```java
+>     public boolean remove(Object o) {
+>         if (o == null) {
+>             for (int index = 0; index < size; index++)
+>                 if (elementData[index] == null) {
+>                     fastRemove(index);
+>                     return true;
+>                 }
+>         } else {
+>             for (int index = 0; index < size; index++)
+>                 if (o.equals(elementData[index])) {
+>                     fastRemove(index);
+>                     return true;
+>                 }
+>         }
+>         return false;
+>     }
+> ```
+>
+> 
+
+#### LinkedList
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
