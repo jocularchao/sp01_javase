@@ -1,6 +1,7 @@
 package top.jocularchao.l01start;
 
-import java.util.ArrayList;//集合类基本都是在java.util包下定义的
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Create with IntelliJ IDEA.
@@ -23,5 +24,10 @@ public class Demo {
         ArrayList<Integer> list2 = new ArrayList<>();
         list2.add(new Integer(30));
         list2.remove(new Integer(30));
+
+
+        List<String> list3 = new ArrayList<>();
+
     }
+
 }
