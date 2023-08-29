@@ -158,17 +158,50 @@ public class Main {
 }
 ```
 
-
-
 ### 泛型方法
 
+​	当某个方法（无论是是静态方法还是成员方法）需要接受的参数类型并不确定时，我们也可以使用泛型来表示：
 
+```java
+public class demo {
+    public static void main(String[] args) {
+        System.out.println(test("Hello World!"));
+    }
+
+    private static <T> T test(T t){
+        //在返回值类型前添加<>并填写泛型变量表示这个是一个泛型方法
+        return t;
+    }
+
+}
+```
 
 ### 泛型的界限
 
+​	只需要在泛型后面加上extends关键字即可指定上界
 
+```java
+    public static void main(String[] args) {
+        System.out.println(test(5.0));
+    }
+
+    private static <T extends Number> T test(T t){
+        //在返回值类型前添加<>并填写泛型变量表示这个是一个泛型方法
+        return t;
+    }
+```
+
+​	同样的，我们也可以用通配符  下界
+
+```java
+public static void main(String[] args) {
+    Score<? extends Integer> score = new Score<>("数据结构与算法", "EP074512", 60);
+}
+```
 
 ### 类型擦除
+
+泛型是如何实现的呢？ 程序编译之后的样子是什么样呢？
 
 
 
@@ -413,7 +446,57 @@ public interface List<E> extends Collection<E> {
 
 
 
+#### 集合的使用
 
+一般的，我们要使用一个集合类，我们就会使用接口的引用：
+
+```java
+List<String> list3 = new ArrayList<>();
+```
+
+使用接口的引用来操作具体的集合类实现，是为了方便日后如果我们想要更换不同的集合类实现，而且接口中本身就已经定义了主要的方法，所以说没必要直接用实现类
+
+集合类是支持嵌套使用的，一个集合中可以存放多个集合，套娃:
+
+```java
+public static void main(String[] args) {
+    List<List<String>> list = new LinkedList<>();
+    list.add(new LinkedList<>());   //集合中的每一个元素就是一个集合，这个套娃是可以一直套下去的
+    System.out.println(list.get(0).isEmpty());
+}
+```
+
+在Arrays工具类中，我们可以快速生成一个只读的List：
+
+```java
+public static void main(String[] args) {
+    List<String> list = Arrays.asList("A", "B", "C");   //非常方便
+    System.out.println(list);
+}
+```
+
+> 这个生成的List是只读的，不能进行修改操作，只能使用获取内容相关的方法，否则抛出 UnsupportedOperationException 异常。要生成正常使用的，我们可以将这个只读的列表作为参数传入：
+>
+> ```java
+> public static void main(String[] args) {
+>     List<String> list = new ArrayList<>(Arrays.asList("A", "B", "C"));
+>     System.out.println(list);
+> }
+> ```
+>
+
+当然，也可以利用静态代码块：
+
+```java
+public static void main(String[] args) {
+    List<String> list = new ArrayList<String>() {{   //使用匿名内部类（匿名内部类在Java8无法使用钻石运算符，但是之后的版本可以）
+            add("A");
+            add("B");
+            add("C");
+    }};
+    System.out.println(list);
+}
+```
 
 #### ArrayList
 
@@ -515,11 +598,54 @@ public class ArrayList<E> extends AbstractList<E>
 >     }
 > ```
 >
-> 
 
 #### LinkedList
 
+​	LinkedList同样是List的实现类，只不过它是采用的链式实现，它是一个双向链表，也就是同时保存两个方向：
 
+```java
+public class LinkedList<E>
+    extends AbstractSequentialList<E>
+    implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+{
+    transient int size = 0;
+
+    //引用首结点
+    transient Node<E> first;
+
+    //引用尾结点
+    transient Node<E> last;
+
+    //构造方法，很简单，直接创建就行了
+    public LinkedList() {
+    }
+  
+  	...
+      
+    private static class Node<E> {   //内部使用的结点类
+        E item;
+        Node<E> next;   //不仅保存指向下一个结点的引用，还保存指向上一个结点的引用
+        Node<E> prev;
+
+        Node(Node<E> prev, E element, Node<E> next) {
+            this.item = element;
+            this.next = next;
+            this.prev = prev;
+        }
+    }
+  
+    ...
+}
+```
+
+
+
+### 迭代器
+
+​	实际上我们的集合类都是支持foreach语法
+
+```java
+```
 
 
 
