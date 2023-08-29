@@ -7,5 +7,6 @@ package top.jocularchao.test;
  * @date 2023/8/25 20:29
  * @Description
  */
-public interface Study {
+public interface Study<T> {
+    T test();
 }

@@ -11,6 +11,14 @@ public class Score<S> {    // 泛型类需要使用<>，我们需要在里面添
     String name;
     String id;
 
+    public S getValue() {
+        return value;
+    }
+
+    public void setValue(S value) {
+        this.value = value;
+    }
+
     S value;        // S会根据使用时提供的类型自动变成对应类型
 
     //static T tean;  //1 静态方法中不能用
@@ -19,13 +27,16 @@ public class Score<S> {    // 泛型类需要使用<>，我们需要在里面添
     //    String a = (String) s;
     //}
 
-    //void test(){              //3 不能通过这个泛型变量去直接创建对象和对应的数组
-    //    T t = new T();
-    //}
+    void test(){              //3 不能通过这个泛型变量去直接创建对象和对应的数组
+        //T t = new T();
+    }
     public Score(String name, String id, S value) {     //这里S可以是任意类型，但一旦确定就无法修改了
         this.name = name;
         this.id = id;
         this.value = value;
+    }
+
+    public Score() {
     }
 
     public static void main(String[] args) {
@@ -38,5 +49,10 @@ public class Score<S> {    // 泛型类需要使用<>，我们需要在里面添
 
 
         //Score<String> score2 = score1; //4 具体类型不同的泛型类变量，不能使用不同的变量进行接收
+
+        //5 可以用通配符?来让某个变量支持引用确定了任意类型的泛型，但若使用通配符，由于类型不确定，所以说具体类型同样会变成Object
+        Score<?> test = new Score<Integer>();
+        test = new Score<String>();
+        Object o = test.value;
     }
 }
