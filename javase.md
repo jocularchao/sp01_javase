@@ -645,35 +645,353 @@ public class LinkedList<E>
 ​	实际上我们的集合类都是支持foreach语法
 
 ```java
+public class IteratorDemo1 {
+    public static void main(String[] args) {
+        List<String> list = new LinkedList<>(Arrays.asList("A", "B", "C"));
+        /*Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }*/
+
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
+
+}
 ```
 
+但实际上是语法糖，我们打开编辑文件，发现还是通过Iterator迭代器实现：
+
+```java
+public class IteratorDemo1 {
+    public IteratorDemo1() {
+    }
+
+    public static void main(String[] args) {
+        List<String> list = new LinkedList(Arrays.asList("A", "B", "C"));
+        Iterator var2 = list.iterator();
+
+        while(var2.hasNext()) {
+            String s = (String)var2.next();
+            System.out.println(s);
+        }
+    }
+}
+```
+
+#### 源码剖析
+
+Iterator来自Collection集合跟接口的父类Iterable接口：
+
+```java
+public interface Iterator<E> {
+	//看看是否还有下一个元素
+    boolean hasNext();
+
+    //遍历当前元素，并将下一个元素作为待遍历元素
+    E next();
+
+	//移除上一个被遍历的元素（某些集合不支持这种操作）
+    default void remove() {
+        throw new UnsupportedOperationException("remove");
+    }
+    //对剩下的元素进行自定义遍历操作
+    default void forEachRemaining(Consumer<? super E> action) {
+        Objects.requireNonNull(action);
+        while (hasNext())
+            action.accept(next());
+    }
+}
+```
+
+运行机制：
+
+![image-20230829185423692](./javase/image-20230829185423692.png)
+
+ArrayList和LinkedList各自的实现方式不同
+
+ArrayList就是直接按下标访问:
+
+```java
+public E next() {
+  	.....
+    cursor = i + 1;  //移动指针
+    return (E) elementData[lastRet = i];  //直接返回指针所指的元素
+}
+```
+
+LinkedList就是不断向后寻找结点：
+
+```java
+public E next() {
+    ...
+    next = next.next;   //向后继续寻找结点
+    nextIndex++;
+    return lastReturned.item;  //返回结点内部存放的元素
+}
+```
+
+因为这种设计，Iterator就可以直接使用而不用在意集合如何实现
+
+> 注意
+>
+> ​	迭代器的使用是一次性的，用了之后就不能用了，如果需要再次进行遍历操作，那么需要重新生成一个迭代器对象。
+>
+> ​	为了简便，我们可以直接使用`foreach`语法来快速遍历集合类。
+
+#### 新特性
+
+java8 提供了一个Lambda表达式的forEach方法，这个方法接受一个Consumer，也就是对遍历的每一个元素进行操作：
+
+```java
+public static void main(String[] args) {
+    List<String> list = Arrays.asList("A", "B", "C");
+    list.forEach(System.out::println);
+}
+```
+
+因为forEach方法内部本质上也是迭代器在处理，这个方法是在Iterable接口中定义的：
+
+```java
+default void forEach(Consumer<? super T> action) {
+    Objects.requireNonNull(action);
+    for (T t : this) {	//foreach语法遍历每一个元素
+        action.accept(t);	//调用Consumer的accept来对每一个元素进行消费
+    }
+}
+```
+
+#### Iterable接口
+
+![image-20230829190758048](./javase/image-20230829190758048.png)
+
+```java
+//注意这个接口是集合接口的父接口，不要跟之前的迭代器接口搞混了
+public interface Iterable<T> {
+    //生成当前集合的迭代器，在Collection接口中重复定义了一次
+    Iterator<T> iterator();
+
+    //Java8新增方法，因为是在顶层接口中定义的，因此所有的集合类都有这个方法
+    default void forEach(Consumer<? super T> action) {
+        Objects.requireNonNull(action);
+        for (T t : this) {
+            action.accept(t);
+        }
+    }
+
+    //这个方法会在多线程部分中进行介绍，暂时不做讲解
+    default Spliterator<T> spliterator() {
+        return Spliterators.spliteratorUnknownSize(iterator(), 0);
+    }
+}
+```
+
+#### ListIterator
+
+这个迭代器是针对于List的强化版本，增加了更多方便的操作，因为List是有序集合，所以它支持两种方向的遍历操作，不仅能从前向后，也可以从后向前：
+
+```java
+public interface ListIterator<E> extends Iterator<E> {
+    //原本就有的
+    boolean hasNext();
+
+    //原本就有的
+    E next();
+
+    //查看前面是否有已经遍历的元素
+    boolean hasPrevious();
+
+    //跟next相反，这里是倒着往回遍历
+    E previous();
+
+    //返回下一个待遍历元素的下标
+    int nextIndex();
+
+    //返回上一个已遍历元素的下标
+    int previousIndex();
+
+    //原本就有的
+    void remove();
+
+    //将上一个已遍历元素修改为新的元素
+    void set(E e);
+
+    //在遍历过程中，插入新的元素到当前待遍历元素之前
+    void add(E e);
+}
+```
+
+### Queue和Deque
+
+LinkedList除了可以直接当做列表使用之外，还可以当做其他的数据结构使用，可以看到它不 仅仅实现了List接口：
+
+```java
+public class LinkedList<E>
+    extends AbstractSequentialList<E>
+    implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+{
+```
+
+![image-20230829191523145](./javase/image-20230829191523145.png)
+
+队列接口，它扩展了大量队列相关操作：
+
+```java
+public interface Queue<E> extends Collection<E> {
+    //队列的添加操作，是在队尾进行插入（只不过List也是一样的，默认都是尾插）
+  	//如果插入失败，会直接抛出异常
+    boolean add(E e);
+
+    //同样是添加操作，但是插入失败不会抛出异常
+    boolean offer(E e);
+
+    //移除队首元素，但是如果队列已经为空，那么会抛出异常
+    E remove();
+
+   	//同样是移除队首元素，但是如果队列为空，会返回null
+    E poll();
+
+    //仅获取队首元素，不进行出队操作，但是如果队列已经为空，那么会抛出异常
+    E element();
+
+    //同样是仅获取队首元素，但是如果队列为空，会返回null
+    E peek();
+}
+```
+
+因此，我们可以直接将一个LinkedList当作一个队列使用：
+
+```java
+public static void main(String[] args) {
+    Queue<String> queue = new LinkedList<>();   //当做队列使用，还是很方便的
+    queue.offer("AAA");
+    queue.offer("BBB");
+    System.out.println(queue.poll());
+    System.out.println(queue.poll());
+}
+```
+
+我们接着来看双端队列，实际上双端队列就是队列的升级版，我们一个普通的队列就是：
+
+![image-20230829191835594](./javase/image-20230829191835594.png)
+
+普通队列中从队尾入队，队首出队，而双端队列允许在队列的两端进行入队和出队操作：
+
+![image-20230829191906423](./javase/image-20230829191906423.png)
+
+利用这种特性，双端队列既可以当做普通队列使用，也可以当做栈来使用，我们来看看Java中是如何定义的Deque双端队列接口的：
+
+```java
+//在双端队列中，所有的操作都有分别对应队首和队尾的
+public interface Deque<E> extends Queue<E> {
+    //在队首进行插入操作
+    void addFirst(E e);
+
+    //在队尾进行插入操作
+    void addLast(E e);
+		
+  	//不用多说了吧？
+    boolean offerFirst(E e);
+    boolean offerLast(E e);
+
+    //在队首进行移除操作
+    E removeFirst();
+
+    //在队尾进行移除操作
+    E removeLast();
+
+    //不用多说了吧？
+    E pollFirst();
+    E pollLast();
+
+    //获取队首元素
+    E getFirst();
+
+    //获取队尾元素
+    E getLast();
+
+		//不用多说了吧？
+    E peekFirst();
+    E peekLast();
+
+    //从队列中删除第一个出现的指定元素
+    boolean removeFirstOccurrence(Object o);
+
+    //从队列中删除最后一个出现的指定元素
+    boolean removeLastOccurrence(Object o);
+
+    // *** 队列中继承下来的方法操作是一样的，这里就不列出了 ***
+
+    ...
+
+    // *** 栈相关操作已经帮助我们定义好了 ***
+
+    //将元素推向栈顶
+    void push(E e);
+
+    //将元素从栈顶出栈
+    E pop();
 
 
+    // *** 集合类中继承的方法这里也不多种介绍了 ***
 
+    ...
 
+    //生成反向迭代器，这个迭代器也是单向的，但是是next方法是从后往前进行遍历的
+    Iterator<E> descendingIterator();
 
+}
+```
 
+我们可以直接当做栈来进行使用：
 
+```java
+public static void main(String[] args) {
+    Deque<String> deque = new LinkedList<>();
+    deque.push("AAA");
+    deque.push("BBB");
+    System.out.println(deque.pop());
+    System.out.println(deque.pop());
+}
+```
 
+正向迭代器和反向迭代器：
 
+```java
+public static void main(String[] args) {
+    Deque<String> deque = new LinkedList<>();
+    deque.addLast("AAA");
+    deque.addLast("BBB");
+    Iterator<String> descendingIterator = deque.descendingIterator();
+    System.out.println(descendingIterator.next());
 
+    Iterator<String> iterator = deque.iterator();
+    System.out.println(iterator.next());
+}
+```
+当然，除了LinkedList实现了队列接口之外，还有其他的实现类，但是并不是很常用，这里做了解就行了：
 
+```java
+public static void main(String[] args) {
+    Deque<String> deque = new ArrayDeque<>();   //数组实现的栈和队列
+    Queue<String> queue = new PriorityQueue<>();  //优先级队列
+}
+```
 
+这里需要介绍一下优先级队列，优先级队列可以根据每一个元素的优先级，对出队顺序进行调整，默认情况按照自然顺序：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```java
+public static void main(String[] args) {
+    Queue<Integer> queue = new PriorityQueue<>();
+    queue.offer(10);
+    queue.offer(4);
+    queue.offer(5);
+    System.out.println(queue.poll());
+    System.out.println(queue.poll());
+    System.out.println(queue.poll());
+}
+```
 
 
 
