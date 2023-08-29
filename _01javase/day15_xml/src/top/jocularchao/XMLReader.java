@@ -21,7 +21,7 @@ public class XMLReader {
         // 创建DocumentBuilder对象
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document d = builder.parse("file:test.xml");
+            Document d = builder.parse("file:day15_xml/test.xml");
             // 每一个标签都作为一个节点
             NodeList nodeList = d.getElementsByTagName("outer");  // 可能有很多个名字为test的标签
             Node rootNode = nodeList.item(0); // 获取首个
