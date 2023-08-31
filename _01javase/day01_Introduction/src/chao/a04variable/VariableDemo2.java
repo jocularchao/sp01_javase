@@ -22,6 +22,7 @@ public class VariableDemo2 {
 //        System.out.println(money);
         money=1000;
         System.out.println(money);
+
     }
 
 }
