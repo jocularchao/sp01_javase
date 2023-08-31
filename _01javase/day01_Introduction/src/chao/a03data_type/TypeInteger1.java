@@ -10,6 +10,7 @@ package chao.a03data_type;
  */
 public class TypeInteger1 {
     public static void main(String[] args) {
+
         // 一字节 8位
         byte b = 127;           //1
         short s = 32767;        //2
