@@ -9,7 +9,6 @@ package chao.a03data_type;
  * @description: false true
  */
 public class TypeBoolean5 {
-     
- 
+
  
 }
