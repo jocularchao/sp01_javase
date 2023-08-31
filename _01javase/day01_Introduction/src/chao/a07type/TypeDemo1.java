@@ -37,6 +37,5 @@ public class TypeDemo1 {
         double db1=ch;
         System.out.println(db1);
 
-        //当用二元运算符进行计算时，会发生自动类型转换
     }
 }
