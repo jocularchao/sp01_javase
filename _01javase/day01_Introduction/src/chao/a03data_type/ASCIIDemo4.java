@@ -16,5 +16,6 @@ public class ASCIIDemo4 {
         System.out.println(ch);
         System.out.println((int) ch);
 //        int class=23;
+
     }
 }
