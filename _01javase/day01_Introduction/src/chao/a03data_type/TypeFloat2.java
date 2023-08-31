@@ -10,6 +10,7 @@ package chao.a03data_type;
  *
  * 所有浮点数值计算都遵循IEEE 754 规范
  * 三个特殊的浮点数值
+ *
  */
 public class TypeFloat2 {
     public static void main(String[] args) {
