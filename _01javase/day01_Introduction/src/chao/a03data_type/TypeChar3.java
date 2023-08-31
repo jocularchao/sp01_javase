@@ -6,7 +6,7 @@ package chao.a03data_type;
  * @author: JocularChao
  * @E-mail: jocularchao@163.com
  * @Date: 2023/4/9 18:12
- * @description: 有些Unicode字符可以用char描述在a05包详述
+ * @description: 有些Unicode字符可以用char描述 在a05包详述
  */
 public class TypeChar3 {
     public static void main(String[] args) {
