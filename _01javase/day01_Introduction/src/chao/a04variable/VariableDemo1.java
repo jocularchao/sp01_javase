@@ -27,5 +27,6 @@ public class VariableDemo1 {
 
         age=25;
         System.out.println(age);
+
     }
 }
