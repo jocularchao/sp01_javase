@@ -39,6 +39,7 @@ public class TypeFloat2 {
         System.out.println(t2 == x2 ? true : false);
         System.out.println(Double.isInfinite(x2) ? true : false);
 
+        //有限浮点数
         System.out.println(Double.isFinite(3.0/2.0));
 
 
