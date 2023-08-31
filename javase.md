@@ -993,6 +993,58 @@ public static void main(String[] args) {
 }
 ```
 
+### Set集合
+
+我们发现接口中定义的方法都是Collection中直接继承的，因此，Set支持的功能其实也就和Collection中定义的差不多，只不过：
+
+- 不允许出现重复元素
+- 不支持随机访问（不允许通过下标访问）
+
+```java
+public interface Set<E> extends Collection<E> {
+    // Set集合中基本都是从Collection直接继承过来的方法，只不过对这些方法有更加特殊的定义
+    int size();
+    boolean isEmpty();
+    boolean contains(Object o);
+    Iterator<E> iterator();
+    Object[] toArray();
+    <T> T[] toArray(T[] a);
+
+    //添加元素只有在当前Set集合中不存在此元素时才会成功，如果插入重复元素，那么会失败
+    boolean add(E e);
+
+    //这个同样是删除指定元素
+    boolean remove(Object o);
+
+    boolean containsAll(Collection<?> c);
+
+    //同样是只能插入那些不重复的元素
+    boolean addAll(Collection<? extends E> c);
+  
+    boolean retainAll(Collection<?> c);
+    boolean removeAll(Collection<?> c);
+    void clear();
+    boolean equals(Object o);
+    int hashCode();
+
+    //这个方法我们同样会放到多线程中进行介绍
+    @Override
+    default Spliterator<E> spliterator() {
+        return Spliterators.spliterator(this, Spliterator.DISTINCT);
+    }
+}
+```
+
+由于底层采用哈希表实现，所以说无法维持插入元素的顺序：
+
+```java
+public static void main(String[] args) {
+    Set<String> set = new HashSet<>();
+    set.addAll(Arrays.asList("A", "0", "-", "+"));
+    System.out.println(set);
+}
+```
+
 
 
 
