@@ -10,7 +10,7 @@ package chao.a03data_type;
  */
 public class TypeChar3 {
     public static void main(String[] args) {
-        //单引号 一个字符 占一个字节
+        //单引号 一个字符 占一个字节  其实占两位
         System.out.println('中');
         System.out.println('0');
         System.out.println('\n');
