@@ -19,7 +19,6 @@ public class NoteDemo {
         /*
         我要输出很多内容
         看看多行注释是否可以使用
-
         */
 
 
