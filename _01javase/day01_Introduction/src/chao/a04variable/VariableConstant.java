@@ -8,6 +8,7 @@ package chao.a04variable;
  * @Description 常量
  * 用关键字final指示常量，只能被赋值一次，一旦赋值，不能更改，常量一般习惯用全大写。
  * 类常量：可以在一个类的多个方法中使用
+ * 使用static final定义一个类常量
  */
 public class VariableConstant {
     public static final double CM_PER_INCH = 2.54;
