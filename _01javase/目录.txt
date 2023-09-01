@@ -1,21 +1,22 @@
-02变量
-03string
-04循环
-05数组
-06类和方法
-07面向对象的特点
-08继承、多态
-08接口、lambda
+01基础
+02循环、小知识
+03String
+04类和方法
+05static、final
+06继承、多态
+07接口、lambda
+08枚举
 09常用类
 10异常
 11泛型程序设计
-12集合框架
+12集合框架 list
 13io
-14io
+14反射
 15xml
 16http
 17jdbc
-18jishu
+18jvm
+19
 19java新特性
 java9
 java10
@@ -23,5 +24,6 @@ java11
 java12/13/14
 java15/16/17
 20java设计模式
-21api
-
+21juc
+22java NIO
+23API
