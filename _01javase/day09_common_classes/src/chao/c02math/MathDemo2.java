@@ -10,6 +10,6 @@ package chao.c02math;
  */
 public class MathDemo2 {
     public static strictfp void main(String[] args) {
-
+        System.out.println(2.0-1.1);
     }
 }
