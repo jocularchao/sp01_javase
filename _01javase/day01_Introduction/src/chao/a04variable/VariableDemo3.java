@@ -1,5 +1,7 @@
 package chao.a04variable;
 
+import java.math.BigInteger;
+
 /**
  * Create with IntelliJ IDEA.
  *
@@ -10,5 +12,18 @@ package chao.a04variable;
  * 任意精度浮点数 和 任意精度整数
  */
 public class VariableDemo3 {
+    public static void main(String[] args) {
+        //使用静态valueOf方法将普通的数值转换为大数值
+        int m = 100;
+        BigInteger n = BigInteger.valueOf(m);
+        System.out.println(n);
 
+        //计算时不能使用算术运算符 ，应该使用add multiply 方法
+        BigInteger a = n.add(BigInteger.valueOf(3));
+        BigInteger d = a.multiply(n); // 100 * 103
+        System.out.println(d);
+
+
+        //add subtract multiply divide mod compareTo valueOf
+    }
 }
