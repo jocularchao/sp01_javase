@@ -2,6 +2,8 @@
 
 ## 0 idea快捷键
 
+ctrl+clt+t   if、for、try快捷键
+
 alt + F8 评估表达式
 
 ctrl+alt+shift+u 查看类的关系图
