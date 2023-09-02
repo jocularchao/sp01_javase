@@ -22,8 +22,6 @@ public class Demo1 {
             char c = datas.charAt(random.nextInt(datas.length()));
             code+=c;
         }
-
         System.out.println(code);
-
     }
 }
