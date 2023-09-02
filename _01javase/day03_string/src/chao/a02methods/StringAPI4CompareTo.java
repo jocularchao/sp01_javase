@@ -15,6 +15,7 @@ public class StringAPI4CompareTo {
         String a = "1";
         String b = "1";
 
+
         if (a.compareTo(b)==0){
             System.out.println("相等");
         }else if (a.compareTo(b)==-1){
