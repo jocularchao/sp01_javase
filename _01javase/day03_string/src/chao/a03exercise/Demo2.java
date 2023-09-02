@@ -31,8 +31,6 @@ public class Demo2 {
             } else {
                 System.out.println("用户名或者密码错误了！");
             }
-
-
         }
     }
 }
