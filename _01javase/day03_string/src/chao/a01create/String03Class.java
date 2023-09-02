@@ -32,7 +32,6 @@ public class String03Class {
         System.out.println(s3);
 
         //4  public String(byte[] chs) 根据字节数组的内容，来创建字符串对象
-
         byte[] bytes = {1, 2, 3, 4};
         String s4 = new String(bytes);
         System.out.println(s4);
