@@ -50,12 +50,6 @@ boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset
 测试两个字符串区域是否相等。
 boolean regionMatches(int toffset, String other, int ooffset, int len)
 测试两个字符串区域是否相等。
-String replace(char oldChar, char newChar)
-返回从替换所有出现的导致一个字符串 oldChar在此字符串 newChar 。
-String replaceAll(String regex, String replacement)
-用给定的替换替换与给定的 regular expression匹配的此字符串的每个子字符串。
-String replaceFirst(String regex, String replacement)
-用给定的替换替换与给定的 regular expression匹配的此字符串的第一个子字符串。
 
 CharSequence subSequence(int beginIndex, int endIndex)
 返回一个字符序列，该序列是该序列的子序列。
