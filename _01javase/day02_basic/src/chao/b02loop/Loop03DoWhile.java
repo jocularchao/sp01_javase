@@ -7,5 +7,6 @@ package chao.b02loop;
  * @date 2023/9/2 12:03
  * @Description
  */
-public class Loop03DoWhille {
+public class Loop03DoWhile {
+
 }
