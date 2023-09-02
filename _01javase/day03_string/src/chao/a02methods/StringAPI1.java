@@ -10,6 +10,7 @@ package chao.a02methods;
  */
 public class StringAPI1 {
     public static void main(String[] args) {
+
         String name = "jocularchao";
         //public int length()                                   返回此字符串的长度
         System.out.println(name.length());
