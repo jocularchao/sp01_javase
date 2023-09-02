@@ -18,7 +18,6 @@ public class String01basis {
         //1、分割字符串
         String a1 = a.substring(0, 3);      //[0,3)  Hel   length = 3-0
 
-
         //2、字符串拼接  用+
         String s = a + a1;
 
