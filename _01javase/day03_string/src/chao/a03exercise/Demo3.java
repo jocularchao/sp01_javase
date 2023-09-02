@@ -22,7 +22,5 @@ public class Demo3 {
         String newPhone = before+"****"+after;
 
         System.out.println(newPhone);
-
-
     }
 }
