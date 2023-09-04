@@ -11,7 +11,7 @@ package e01base;
  * • Sub 类和 Base 类位千不同的包中时Sub类继承Base类中public、protected
  * 访问级别的成员变址和成员方法
  */
-public class Base {
+public class Base extends Object{
     public int publicVarOfBase = 1;
     private int privateVarOfBase = 1;
     int defaultVarOfBase =  1;
