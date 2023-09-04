@@ -5,7 +5,7 @@ package e01base;
  *
  * @author JocularChao
  * @date 2023/9/4 13:38
- * @Description 方法重写、super
+ * @Description 方法重写
  *  重写 覆盖继承来的方法的实现
  *  super
  *
