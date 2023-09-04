@@ -6,6 +6,10 @@ package c01create;
  * @author JocularChao
  * @date 2023/9/2 20:47
  * @Description 重载使用
+ * • 方法名相同
+ * • 方法的参数类型 个数、顺序至少有 项不相同
+ * • 方法的返回类型可以不相同
+ * • 方法的修饰符可以不相同
  */
 public class Class02Overload {
     public static void main(String[] args) {
@@ -16,5 +20,8 @@ public class Class02Overload {
         Class01Create.open(1);
         Class01Create.open();
     }
+
+    //那作为程序入口的main方法呢？
+    //也可以被重载
 
 }
