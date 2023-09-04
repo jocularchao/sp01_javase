@@ -15,5 +15,8 @@ public class Base extends Object{
     public int publicVarOfBase = 1;
     private int privateVarOfBase = 1;
     int defaultVarOfBase =  1;
-    protected void methodOfBase(){}
+    protected void methodOfBase() throws ExceptionBase{}
+
+    private class ExceptionBase extends Exception {
+    }
 }
