@@ -8,6 +8,9 @@ package e01base;
  * @Description 子类测试
  */
 public class Sub extends Base{
+
+    static void methodStatic(){}
+
     public void methodOfSub () throws ExceptionBase {
         publicVarOfBase = 2;
         defaultVarOfBase = 2;
