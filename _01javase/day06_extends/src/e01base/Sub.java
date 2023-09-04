@@ -8,14 +8,14 @@ package e01base;
  * @Description 子类测试
  */
 public class Sub extends Base{
-    public void methodOfSub(){
+    public void methodOfSub () throws ExceptionBase {
         publicVarOfBase = 2;
         defaultVarOfBase = 2;
         //privateVarOfBase =2 ;
         methodOfBase();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExceptionBase {
         Sub sub = new Sub();
 
         sub.publicVarOfBase = 3;
