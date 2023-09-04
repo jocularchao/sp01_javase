@@ -23,5 +23,6 @@ public class Class02Overload {
 
     //那作为程序入口的main方法呢？
     //也可以被重载
+    private void main(String s){}
 
 }
