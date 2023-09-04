@@ -9,7 +9,9 @@ package e01base;
  */
 public class Sub extends Base{
 
-    static void methodStatic(){}
+    static void methodStatic(){
+        System.out.println("父类static");
+    }
 
     public void methodOfSub () throws ExceptionBase {
         publicVarOfBase = 2;
