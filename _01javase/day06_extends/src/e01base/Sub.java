@@ -6,6 +6,8 @@ package e01base;
  * @author JocularChao
  * @date 2023/9/3 21:01
  * @Description 子类测试
+ *
+ * sub类重写了base的methodOfSub方法并可以继续重载该方法
  */
 public class Sub extends Base{
 
@@ -18,6 +20,10 @@ public class Sub extends Base{
         defaultVarOfBase = 2;
         //privateVarOfBase =2 ;
         methodOfBase();
+    }
+
+    public int methodOfSub(String s){
+        return 0;
     }
 
     public static void main(String[] args) throws ExceptionBase {
