@@ -14,6 +14,11 @@ package e02super_this;
  *
  */
 public class Base {
+
+    public Base(String var) {
+        this.var = var;
+    }
+
     String var = "BaseVar";
 
     void BaseMethod(){
