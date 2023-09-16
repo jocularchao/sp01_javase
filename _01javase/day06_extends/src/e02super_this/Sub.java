@@ -17,6 +17,7 @@ public class Sub extends Base{
         super(var);
     }
 
+    //4 在构造方法中，调用父类的构造方法
     public Sub(String varBase, String var) {
         super(varBase);
         this.var = var;
