@@ -8,4 +8,5 @@ package e03polymorphic;
  * @Description
  */
 public class Bone extends Food{
+
 }

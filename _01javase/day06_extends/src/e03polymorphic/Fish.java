@@ -8,4 +8,15 @@ package e03polymorphic;
  * @Description
  */
 public class Fish extends Food{
+    double weight;
+
+    static String name = "鲤鱼";
+
+    void sleep(){
+        System.out.println("鱼在睡觉");
+    }
+
+    static void eat(){
+        System.out.println(name+"在吃");
+    }
 }

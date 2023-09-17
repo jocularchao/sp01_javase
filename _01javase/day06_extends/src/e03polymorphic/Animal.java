@@ -5,7 +5,7 @@ package e03polymorphic;
  *
  * @author JocularChao
  * @date 2023/9/5 11:12
- * @Description
+ * @Description  父类 动物类
  */
 public class Animal {
 

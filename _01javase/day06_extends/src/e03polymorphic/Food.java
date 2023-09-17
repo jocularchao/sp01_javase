@@ -5,7 +5,11 @@ package e03polymorphic;
  *
  * @author JocularChao
  * @date 2023/9/5 11:12
- * @Description
+ * @Description 父类 食物类
  */
 public class Food {
+    double foodWeight;
+    static double totalWeight;
+
+
 }
