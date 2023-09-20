@@ -19,8 +19,8 @@ public class IteratorDemo1 {
         //通过调用iterator方法快速获取当前集合的迭代器
         //Iterator迭代器本身也是一个接口，由具体的集合实现类来根据情况实现
         /*Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
+        while (iterator.hasNext()){ //每次循环一定要判断是否还有元素剩余
+            System.out.println(iterator.next());//如果有就可以继续获取到下一个元素
         }*/
 
         for (String s : list) {
