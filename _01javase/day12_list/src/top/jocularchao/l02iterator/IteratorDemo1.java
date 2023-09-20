@@ -9,11 +9,15 @@ import java.util.List;
  *
  * @author JocularChao
  * @date 2023/8/29 12:39
- * @Description
+ * @Description 迭代器具体实现
  */
 public class IteratorDemo1 {
     public static void main(String[] args) {
-        List<String> list = new LinkedList<>(Arrays.asList("A", "B", "C"));
+        List<String> list = new
+                LinkedList<>(Arrays.asList("A", "B", "C"));
+        //这时foreach在编译阶段的代码
+        //通过调用iterator方法快速获取当前集合的迭代器
+        //Iterator迭代器本身也是一个接口，由具体的集合实现类来根据情况实现
         /*Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
