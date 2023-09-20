@@ -8,7 +8,10 @@ import java.util.List;
  *
  * @author JocularChao
  * @date 2023/8/25 21:31
- * @Description
+ * @Description 顺序表
+ * ArrayList 底层由数组实现，内部维护的是一个可动态进行扩容的数组，也就是我们之前所说的顺序表
+ * 有序集合，插入元素默认是插入到尾部，按顺序从前往后存放，每个元素都有一个自己的下标位置
+ * 列表中允许存在重复元素
  */
 public class Demo {
     public static void main(String[] args) {
