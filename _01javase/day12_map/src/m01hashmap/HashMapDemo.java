@@ -38,7 +38,7 @@ public class HashMapDemo {
         System.out.println(map.keySet());
         System.out.println(map.values());
 
-        //6 连地址法解决因为哈希冲突，保存元素数量存在限制的问题
+        //6 连地址法解决因为哈希冲突，保存元素数量存在限制的问题 看源码
         //
     }
 }
