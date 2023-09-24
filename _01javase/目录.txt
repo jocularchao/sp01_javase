@@ -15,7 +15,6 @@
 15反射
 16注解
 17jdbc
-18xml
 19java新特性
 java9
 java10
