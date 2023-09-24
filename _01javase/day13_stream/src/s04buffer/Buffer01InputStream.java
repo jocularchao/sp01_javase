@@ -11,6 +11,7 @@ import java.io.IOException;
  * @date 2023/9/24 20:22
  * @Description BufferedInputStream 类覆盖了被装饰的输入流的读数据行为，利用缓冲区来提高读
  * 数据的效率
+ * 缓冲字节流
  *
  * 实际上进行I/O操作的并不是BufferedInputStream，而是我们传入的FileInputStream.
  * 而BufferedInputStream虽然有着同样的方法，但是进行了一些额外的处理然后再调用FileInputStream的同名方法，
