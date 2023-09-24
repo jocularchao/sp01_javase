@@ -9,7 +9,7 @@ import java.io.Console;
  * @date 2023/9/1 18:17
  * @Description Console类 从控制台读取密码
  */
-public class ScannerDemo2 {
+public class ScannerDemo2Console {
     public static void main(String[] args) {
         //因为输入是可见的
         //scanner类不适合用于从控制台读取密码，而Console类来实现这个目的
