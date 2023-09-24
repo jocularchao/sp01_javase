@@ -11,7 +11,7 @@ import java.io.IOException;
  * @date 2023/9/23 17:38
  * @Description FileOutputStream实现文件拷贝
  */
-public class FileOutputStream03Use {
+public class FileOutputStream03Copy {
     public static void main(String[] args) {
         try(FileInputStream inputStream = new FileInputStream("./day13_stream/test.txt");
             FileOutputStream outputStream = new FileOutputStream("./day13_stream/fileoutput.txt")) {
