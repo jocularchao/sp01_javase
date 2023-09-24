@@ -9,7 +9,7 @@ import java.io.PrintStream;
  *
  * @author JocularChao
  * @date 2023/9/24 21:02
- * @Description PrintStream
+ * @Description PrintStream 打印流
  *  FilterOutputStream的子类，因此依然是装饰我们传入的输出流，但是它存在自动刷新机制
  *  并且PrintStream也永远不会抛出异常，而是使用内部检查机制`checkError()`方法进行错误检查。
  *  最方便的是，它能够格式化任意的类型，将它们以字符串的形式写入到输出流。
