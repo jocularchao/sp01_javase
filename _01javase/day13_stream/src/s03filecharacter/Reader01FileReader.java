@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class Reader01FileReader {
     public static void main(String[] args) {
-        try (FileReader reader = new FileReader("./day13_stream/test.txt")) {
+        try (FileReader reader = new FileReader("./day13_stream/filereader.txt")) {
             //reader.skip(1);
             //System.out.println((char) reader.read());  //现在是按字符进行读取，而不是字节，因此可以直接读取到中文字符
             //字符流只接受char[]类型进行存储：
