@@ -8,4 +8,6 @@ package i03method_reference;
  * @Description
  */
 public interface Study {
+
+    int sum(int a, int b);
 }
