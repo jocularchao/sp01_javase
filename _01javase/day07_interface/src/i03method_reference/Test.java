@@ -9,9 +9,7 @@ package i03method_reference;
  */
 public class Test {
 
-    public int lbwnb() {
-        return 1;
-    }
+
     public static void main(String[] args) {
         // 1
         Study study = (a,b)->a+b;
@@ -26,5 +24,9 @@ public class Test {
         Test test = new Test();
         Study study3 = test::lbwnb;
 
+    }
+
+    private int lbwnb(int i, int i1) {
+        return 1;
     }
 }
