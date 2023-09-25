@@ -7,6 +7,7 @@ package t02status;
  * @author JocularChao
  * @date 2023/9/25 18:43
  * @Description 暂停线程
+ *
  */
 public class Thread04Suspend {
     public static void main(String[] args) {
