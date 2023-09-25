@@ -1,4 +1,4 @@
-package t02status;
+package t02method;
 
 /**
  * Create with IntelliJ IDEA.
