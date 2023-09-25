@@ -24,6 +24,9 @@ public class Test {
         Test test = new Test();
         Study study3 = test::lbwnb;
 
+        //5
+        //Study study4 = String::new;
+
     }
 
     private int lbwnb(int i, int i1) {
