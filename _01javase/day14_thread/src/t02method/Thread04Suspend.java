@@ -1,4 +1,4 @@
-package t02status;
+package t02method;
 
 
 /**
@@ -6,7 +6,7 @@ package t02status;
  *
  * @author JocularChao
  * @date 2023/9/25 18:43
- * @Description 暂停线程
+ * @Description  suspend 暂停线程
  *
  */
 public class Thread04Suspend {
