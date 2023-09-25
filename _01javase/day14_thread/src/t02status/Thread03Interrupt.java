@@ -9,6 +9,7 @@ package t02status;
  * 都有一个 interrupt() 方法,
  * 调用此方法后，会给指定线程添加一个中断标记以告知线程需要立即停止运行或是进行其他操作，
  * 由线程来响应此中断并进行相应的处理
+ *
  */
 public class Thread03Interrupt {
     public static void main(String[] args) {
