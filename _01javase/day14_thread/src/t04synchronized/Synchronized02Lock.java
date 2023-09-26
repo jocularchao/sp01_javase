@@ -12,9 +12,11 @@ public class Synchronized02Lock {
     private static int value = 0;
 
     public static void main(String[] args) throws InterruptedException {
+        Synchronized02Lock s1 = new Synchronized02Lock();
+        Synchronized02Lock s2 = new Synchronized02Lock();
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 10000; i++) {
-                synchronized (Synchronized02Lock.class){  //使用synchronized关键字创建同步代码块
+                synchronized (s1){  //使用synchronized关键字创建同步代码块
                     value++;
                 }
             }
@@ -22,7 +24,7 @@ public class Synchronized02Lock {
         });
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < 10000; i++) {
-                synchronized (Synchronized02Lock.class){  //使用synchronized关键字创建同步代码块
+                synchronized (s2){  //使用synchronized关键字创建同步代码块
                     value++;
                 }
             }
