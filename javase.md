@@ -2410,11 +2410,86 @@ Test t4 = ThreadDemo::impl;
 
 #### 2 optional
 
+比如要把传入的字符串转换成小写的，原本我们写应该是：
+
+```java
+System.out.println(str.toLowerCase());
+```
+
+在加上非空判断就是
+
+```java
+public static void strToLower(String str) {
+        //这里要做非空判断
+        if (str!= null)
+            System.out.println(str.toLowerCase());
+        
+    }
+```
+
+但Optional给了我们新的选择
+
+```java
+public static void strToLower(String str) {
+        //这里要做非空判断
+        /*if (str!= null)
+            System.out.println(str.toLowerCase());
+        */
+        
+    //Optional 的 of方法来接收变量，ofNullable（）来接收非空变量
+        Optional.ofNullable(str)
+                .ifPresent(s -> {
+                    System.out.println(s.toLowerCase());
+                });
+    }
+```
+
 
 
 ### jdk9
 
 #### 1 模块化
+
+![image-20230930203636410](./javase/image-20230930203636410.png)
+
+在每个模块设定pom版本为jdk9、新建模块文件
+
+![image-20230930203758090](./javase/image-20230930203758090.png)
+
+在module-b 导入module-a的依赖
+
+![image-20230930203923234](./javase/image-20230930203923234.png)
+
+但虽然导入了module-a的依赖但module-b仍然用不了module-a的包，这就是jdk9的问题，必须在新建的模块文件module-info.java 中进行导出导入操作
+
+module-a：
+
+```java
+open module module.a {
+    //导出module-a给b
+     exports com.test to module.b;
+
+     //transitive 传递给依赖本模块的模块，b不导入logging就可以用了
+     requires transitive java.logging;
+
+    //打开test包与上面的打开模块重叠了，就是为了可以用反射
+     //opens com.test;
+    //使用Test接口
+     uses com.test.Test;
+}
+```
+
+module-b：
+
+```java
+module module.b {
+    //module-b接收module-a
+     requires module.a;
+
+    //声明接口的实现
+     provides com.test.Test with com.study.TestImpl;
+}
+```
 
 
 
@@ -2541,4 +2616,44 @@ jshell> /exit
 
 
 #### 3 接口中的private方法
+
+jdk9后我们就可以定义接口的私有方法：
+
+```java
+public interface Test {
+
+    default void test() {
+        System.out.println("我是test方法默认实现");
+    }
+
+    //private
+    private static void inner() {
+        System.out.println("i'm interface's private method");
+    }
+
+    static void xx(){
+
+    }
+}
+```
+
+​	此私有方法必须提供方法体，因为权限为私有的，也只有这里能进行方法的具体实现，并且此方法只能被接口中的其他私有方法或是默认实现调用。
+
+​	
+
+
+
+#### 4 工厂方法
+
+
+
+#### 5 改进的streamAPI
+
+
+
+#### 6 其他新特性
+
+
+
+### jdk10
 
