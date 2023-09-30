@@ -2317,3 +2317,228 @@ public static void main(String[] args) {
     }
 }
 ```
+
+
+
+## 18 java新特性
+
+
+
+### java8
+
+#### 1 lambda表达式
+
+- `([参数类型 参数名称，].....)->{代码}`
+- 和匿名内部类不同，lambda只支持接口，不支持抽象类
+- 接口内部有且只有一个抽象方法(可以有多个方法，但必须保证其他方法又默认实现，必须留一个抽象方法出来)
+
+```java
+public class ThreadDemo {
+    public static void main(String[] args) {
+        new Thread(()->{
+            System.out.println("hello");
+        }).start();
+    }
+}
+```
+
+class文件是一个完整的匿名内部类：
+
+![image-20230929220632806](./javase/image-20230929220632806.png)
+
+> 但它的底层并不只是匿名内部类这种简短的写法这么简单：
+>
+> ​	因为当不用lambda时，打开class文件夹有两个文件
+>
+> ![image-20230929221027302](./javase/image-20230929221027302.png)
+>
+> 这里lambda的形式会给Runnable接口一个方法体来实现其run方法，这样就只有一个class文件
+
+
+
+
+
+##### 1.1 @FunctionalInterface 函数式接口
+
+​	这个注解会注明可以用lambda方法，当然对应的接口必须符合一个抽象方法的条件
+
+
+
+##### 1.2 简化
+
+```java
+Test test0 = (int i)->{return ""+i;};
+```
+
+- 方法参数类型可以省略
+
+```java
+Test test0 = (i)->{return ""+i;};
+```
+
+- 只有一个参数时不用加小括号
+
+```java
+Test test0 = i->{return ""+i;};
+```
+
+- 返回语句仅有一行时，无需花括号
+
+```java
+Test t2 = i-> ""+i;
+```
+
+
+
+##### 1.3 lambda的方法体实现
+
+如果实现类里面有一个静态方法匹配接口中的抽象方法的返回值和参数列表
+
+- 我们就可以把他作为返回值
+
+```java
+Test t3 = (i)->impl(i);
+```
+
+- 或者说，使用类名::方法名称的形式来直接引用一个已有的方法作为实现
+
+```java
+Test t4 = ThreadDemo::impl;
+```
+
+
+
+#### 2 optional
+
+
+
+### jdk9
+
+#### 1 模块化
+
+
+
+#### 2 jshell
+
+```bash
+C:\Users\Dell>jshell
+|  欢迎使用 JShell -- 版本 17.0.7
+|  要大致了解该版本, 请键入: /help intro
+
+jshell> /help intro
+|
+|                                   intro
+|                                   =====
+|
+|  使用 jshell 工具可以执行 Java 代码，从而立即获取结果。
+|  您可以输入 Java 定义（变量、方法、类等等），例如：int x = 8
+|  或 Java 表达式，例如：x + x
+|  或 Java 语句或导入。
+|  这些小块的 Java 代码称为“片段”。
+|
+|  这些 jshell 工具命令还可以让您了解和
+|  控制您正在执行的操作，例如：/list
+|
+|  有关命令的列表，请执行：/help
+
+jshell> /help
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [<名称或 id>|-all|-start]
+|       列出您键入的源
+|  /edit <名称或 id>
+|       编辑源条目
+|  /drop <名称或 id>
+|       删除源条目
+|  /save [-all|-history|-start] <文件>
+|       将片段源保存到文件
+|  /open <file>
+|       打开文件作为源输入
+|  /vars [<名称或 id>|-all|-start]
+|       列出已声明变量及其值
+|  /methods [<名称或 id>|-all|-start]
+|       列出已声明方法及其签名
+|  /types [<名称或 id>|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [<integer-expression-snippet>]
+|       退出 jshell 工具
+|  /env [-class-path <路径>] [-module-path <路径>] [-add-modules <模块>] ...
+|       查看或更改评估上下文
+|  /reset [-class-path <路径>] [-module-path <路径>] [-add-modules <模块>]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path <路径>] [-module-path <路径>]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [<command>|<subject>]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [<command>|<subject>]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /<id>
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-<n>
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 '/help', 后跟
+|  命令或主题的名称。
+|  例如 '/help /list' 或 '/help intro'。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  keys
+|       类似 readline 的输入编辑的说明
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+
+jshell> int x = 8
+x ==> 8
+
+jshell> int y = 20
+y ==> 20
+
+jshell> int c = x+y
+c ==> 28
+
+jshell> public int min(int a,int b) {
+   ...>     retrun a<b?a:b;
+   ...> }
+|  错误:
+|  需要';'
+|      retrun a<b?a:b;
+|              ^
+|  错误:
+|  需要>
+|      retrun a<b?a:b;
+|                ^
+
+jshell> public int min(int a,int b) {
+   ...>     return a<b?a:b;
+   ...> }
+|  已创建 方法 min(int,int)
+
+jshell> /methods
+|    int min(int,int)
+
+jshell> c = min(x,y)
+c ==> 8
+
+jshell> /exit
+```
+
+
+
+#### 3 接口中的private方法
+
