@@ -22,6 +22,5 @@ public class Main {
 
         field.setAccessible(true);
         System.out.println(field.get(user));
-
     }
 }
