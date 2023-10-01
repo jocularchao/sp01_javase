@@ -16,5 +16,15 @@ public class StreamAPIDemo {
                 .filter(s->s.equals("B"))
                 .distinct()
                 .forEach(System.out::println);
+
+        //ofNullable 传入的空就是空，不报错
+        Stream
+                .ofNullable(null)
+                .forEach(System.out::println);
+
+        //of传入null会报错
+        Stream
+                .of(null)
+                .forEach(System.out::println);
     }
 }
