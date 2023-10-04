@@ -44,7 +44,7 @@ public class HttpClientDemo1 {
             FileOutputStream stream = new FileOutputStream("image/"+(32361+i)+".jpg"); //一会要保存的格式
             try (stream;imageInput){  //直接把要close的变量放进来就行，简洁一些了
                 int size;   //下面具体保存过程的不用我多说了吧
-                byte[] data = new byte[1024];
+                byte[] data = new byte[2048];
                 while ((size = imageInput.read(data)) > 0) {
                     stream.write(data, 0, size);
                 }
