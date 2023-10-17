@@ -106,3 +106,84 @@ public abstract class Coder {
 
 
 
+#### 依赖倒转原则
+
+依赖倒转原则（Dependence Inversion Principle）也是我们一直在使用的，最明显的就是我们的Spring框架了。
+
+> 高层模块不应依赖于底层模块，它们都应该依赖抽象。抽象不应依赖于细节，细节应该依赖于抽象。
+
+Spring框架之后，我们的开发模式就发生了变化：
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        UserController controller = new UserController();
+    }
+
+    interface UserMapper {
+        //接口中只做CRUD方法定义
+    }
+
+    static class UserMapperImpl implements UserMapper {
+        //实现类完成CRUD具体实现
+    }
+
+    interface UserService {
+        //业务代码定义....
+    }
+
+    static class UserServiceImpl implements UserService {
+        @Resource   //现在由Spring来为我们选择一个指定的实现类，然后注入，而不是由我们在类中硬编码进行指定
+        UserMapper mapper;
+        
+        //业务代码具体实现
+    }
+
+    static class UserController {
+        @Resource
+        UserService service;   //直接使用接口，就算你改实现，我也不需要再修改代码了
+
+        //业务代码....
+    }
+}
+```
+
+可以看到，通过使用接口，我们就可以将原有的强关联给弱化，我们只需要知道接口中定义了什么方法然后去使用即可，而具体的操作由接口的实现类来完成，并由Spring来为我们注入，而不是我们通过硬编码的方式去指定。
+
+
+
+#### 接口隔离原则
+
+接口隔离原则（Interface Segregation Principle, ISP）实际上是对接口的细化。
+
+> 客户端不应依赖那些它不需要的接口。
+
+根据实际情况，对接口进行更细粒度的划分
+
+
+
+#### 合成复用原则
+
+合成复用原则（Composite Reuse Principle）的核心就是委派。
+
+> 优先使用对象组合，而不是通过继承来达到复用的目的。
+
+```java
+class A {
+    public void connectDatabase(){
+        System.out.println("我是连接数据库操作！");
+    }
+}
+
+class B extends A{    //直接通过继承的方式，得到A的数据库连接逻辑
+    public void test(){
+        System.out.println("我是B的方法，我也需要连接数据库！");
+        connectDatabase();   //直接调用父类方法就行
+    }
+}
+```
+
+耦合度太高了:
+
+​	由于业务的更改，我们的数据库连接操作，不再由A来负责，而是由新来的C去负责，那么这个时候，我们就不得不将需要复用A中方法的子类全部进行修改，很显然这样是费时费力的。
