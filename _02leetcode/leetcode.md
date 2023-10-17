@@ -471,3 +471,113 @@ q简单
 - 现在数组中找到要删除的元素
 - 后面的元素依次覆盖前一格
 
+```java
+public int removeElement(int[] nums,int val) {
+    int n = nums.length;
+    for (int i = 0; i < n; i++) {   //遍历数组
+        if (nums[i] == val) {       //首先找到的值为val的索引
+            for (int j = i+1; j < n; j++) {     //遍历后面的元素，使其向前移动一位
+                nums[j-1] = nums[j];
+            }
+            i--;    //因为覆盖完后，是新的元素，需要重新判断
+            n--;    //长度-1 ，尾格位置多余了
+        }
+
+    }
+    for (int i = 0; i < n; i++) {
+        System.out.print(nums[i]+" ");
+    }
+    return n;
+}
+```
+
+- 时间复杂度：O(n^2)
+- 空间复杂度：O(1)
+
+
+
+#### 双指针法
+
+即快慢指针法：**通过一个快指针和慢指针在一个for循环下完成两个for循环的工作。**
+
+- 快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组
+- 慢指针：指向更新 新数组下标的位置
+
+```java
+public int removeElement1(int[] nums,int val) {
+    int slowIndex = 0;
+    for (int fastIndex = 0; fastIndex < nums.length; fastIndex++) {
+        if (nums[fastIndex]!=val) {
+            nums[slowIndex++] = nums[fastIndex];
+        }
+    }
+
+    return slowIndex;
+
+}
+```
+
+
+
+#### 相向双指针法
+
+基于元素顺序可以改变的题目描述改变了元素相对位置，确保了移动最少元素
+
+
+
+
+
+
+
+26.
+
+283.
+
+844.
+
+977.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
