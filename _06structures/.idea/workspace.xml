@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6e4307f-30a3-4043-aa2c-eeb2ef0ed94f" name="Changes" comment="顺序表">
-      <change afterPath="$PROJECT_DIR$/day04_queue/src/LinkedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_02leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_02leetcode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6e4307f-30a3-4043-aa2c-eeb2ef0ed94f" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/数据结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +99,7 @@
       <updated>1697287594650</updated>
       <workItem from="1697287595635" duration="703000" />
       <workItem from="1697341106268" duration="4698000" />
-      <workItem from="1701575820002" duration="3183000" />
+      <workItem from="1701575820002" duration="3483000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -144,7 +141,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697364841973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test">
+      <option name="closed" value="true" />
+      <created>1701598870034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701598870034</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1701598874651</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701598874651</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +169,7 @@
     <MESSAGE value="JUC" />
     <MESSAGE value="structures" />
     <MESSAGE value="顺序表" />
-    <option name="LAST_COMMIT_MESSAGE" value="顺序表" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
