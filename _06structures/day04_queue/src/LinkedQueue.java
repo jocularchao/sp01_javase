@@ -9,7 +9,6 @@ import java.util.NoSuchElementException;
  * 用链表不用考虑容量问题
  */
 public class LinkedQueue<E> {
-
     //头结点
     //因为是单链表，队首需要存放指向头结点的指针，因为需要的是前驱结点，队尾直接指向尾节点的指针即可
     private final Node<E> head = new Node<>(null);
