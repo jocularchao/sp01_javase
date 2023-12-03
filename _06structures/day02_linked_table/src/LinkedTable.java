@@ -26,6 +26,4 @@ public class LinkedTable <E>{
 
     //插入结点
 
-
-
 }
