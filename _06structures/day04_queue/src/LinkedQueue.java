@@ -17,36 +17,32 @@ public class LinkedQueue<E> {
     public void offer(E element) {
         //创建新节点放在队尾，如何放到队尾？先放到队首进行判断
         Node<E> last = head;
-        //判断last即队首的下一个节点是否为空，若为空，直接初始化下一个节点并赋值last，若不为空则继续判断
+        //判断last即队首的下一个节点是否为空，若为空，直接初始化下一个节点并赋值last.next，若不为空则继续判断
         while (last.next != null)
             last = last.next;
         last.next= new Node<>(element);
 
     }
 
-
     //出队
     public E poll(){
-        //先判断，是否有内容节点
+        //先判断，队列是否为空
         if (head.next == null)
             throw new NoSuchElementException("没有节点");
-        //若有节点，则从队首取出，并保持链表完整
+        //若不为空，则从队首取出，并保持链表完整
         E element = head.next.element;
         head.next=head.next.next;
         return element;
     }
 
-
     //创建指针类，用作标记节点
     private static class Node<E>{
         E element;
         Node<E> next;
-
         public Node(E element) {
             this.element = element;
         }
     }
-
 
     public static void main(String[] args) {
         LinkedQueue<String> queue = new LinkedQueue<>();
