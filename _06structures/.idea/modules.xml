@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/_06structures.iml" filepath="$PROJECT_DIR$/.idea/_06structures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day03_table_stack_queue/day03_table_stack_queue.iml" filepath="$PROJECT_DIR$/day03_table_stack_queue/day03_table_stack_queue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day04_tree/day04_tree.iml" filepath="$PROJECT_DIR$/day04_tree/day04_tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_06structures.iml" filepath="$PROJECT_DIR$/_06structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_sequence_table/day01_sequence_table.iml" filepath="$PROJECT_DIR$/day01_sequence_table/day01_sequence_table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_linked_table/day02_linked_table.iml" filepath="$PROJECT_DIR$/day02_linked_table/day02_linked_table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_stack/day03_stack.iml" filepath="$PROJECT_DIR$/day03_stack/day03_stack.iml" />
     </modules>
   </component>
 </project>

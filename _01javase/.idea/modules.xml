@@ -4,9 +4,25 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/_01javase.iml" filepath="$PROJECT_DIR$/.idea/_01javase.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01_Introduction/day01_Introduction.iml" filepath="$PROJECT_DIR$/day01_Introduction/day01_Introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_basic/day02_basic.iml" filepath="$PROJECT_DIR$/day02_basic/day02_basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/day03_string/day03_string.iml" filepath="$PROJECT_DIR$/day03_string/day03_string.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day06_class/day06_class.iml" filepath="$PROJECT_DIR$/day06_class/day06_class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day07_package_jar/day07_package_jar.iml" filepath="$PROJECT_DIR$/day07_package_jar/day07_package_jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04_arrays/day04_arrays.iml" filepath="$PROJECT_DIR$/day04_arrays/day04_arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day05_class_method/day05_class_method.iml" filepath="$PROJECT_DIR$/day05_class_method/day05_class_method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06_extends/day06_extends.iml" filepath="$PROJECT_DIR$/day06_extends/day06_extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06_inner_class/day06_inner_class.iml" filepath="$PROJECT_DIR$/day06_inner_class/day06_inner_class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07_interface/day07_interface.iml" filepath="$PROJECT_DIR$/day07_interface/day07_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08_enum/day08_enum.iml" filepath="$PROJECT_DIR$/day08_enum/day08_enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day09_common_classes/day09_common_classes.iml" filepath="$PROJECT_DIR$/day09_common_classes/day09_common_classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10_exception/day10_exception.iml" filepath="$PROJECT_DIR$/day10_exception/day10_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day11_genericity/day11_genericity.iml" filepath="$PROJECT_DIR$/day11_genericity/day11_genericity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day12_list/day12_list.iml" filepath="$PROJECT_DIR$/day12_list/day12_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day12_map/day12_map.iml" filepath="$PROJECT_DIR$/day12_map/day12_map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day12_set/day12_set.iml" filepath="$PROJECT_DIR$/day12_set/day12_set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day13_stream/day13_stream.iml" filepath="$PROJECT_DIR$/day13_stream/day13_stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day14_thread/day14_thread.iml" filepath="$PROJECT_DIR$/day14_thread/day14_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day15_reflex/day15_reflex.iml" filepath="$PROJECT_DIR$/day15_reflex/day15_reflex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day16_annotation/day16_annotation.iml" filepath="$PROJECT_DIR$/day16_annotation/day16_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_jdbc/day17_jdbc.iml" filepath="$PROJECT_DIR$/day17_jdbc/day17_jdbc.iml" />
     </modules>
   </component>
 </project>

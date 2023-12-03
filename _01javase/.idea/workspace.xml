@@ -4,9 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="事务">
-      <change afterPath="$PROJECT_DIR$/day15_xml/src/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../javase.md" afterDir="false" />
+    <list default="true" id="094d1a52-1c12-4b7f-bc02-b565c8206462" name="变更" comment="内存划分">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_01javaseExamples/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_02leetcode/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_02leetcode/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_02leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_02leetcode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04thread/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_06structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_06structures/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +43,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +66,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2NPY8SW6Uc4st1BsB6fsYFxhlYW" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,21 +79,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/workpace/work_idea/sp01_javase/_01javase/day17_jdbc",
+    "last_opened_file_path": "D:/workpace/work_idea/jdk-learn/jdk1.8.0_25",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -75,16 +106,50 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day02_basic\src\chao\b03package_jar" />
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day02_basic\src\chao\b01branch" />
       <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day17_jdbc" />
       <recent name="D:\workpace\work_idea\sp01_javase\_01javase" />
       <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day08_extends\src\top\jocularchao\e01class_superclass_subclass" />
-      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day01_Introduction\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day13_stream" />
+      <recent name="D:\workpace\work_idea\sp01_javase\_01javase\day15_xml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="chao.b01branch" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.XMLReader">
-    <configuration name="JDBC04ResultSet1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC04ResultSet1" />
-      <module name="day17_jdbc" />
+  <component name="RunManager" selected="Application.StringAPI4CompareTo">
+    <configuration name="DaemonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="t07daemon.DaemonDemo" />
+      <module name="day14_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="t07daemon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForkJoinPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="t08collection.ForkJoinPoolDemo" />
+      <module name="day14_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="t08collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JNITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JNITest" />
+      <module name="day18_jvm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="top.jocularchao.*" />
@@ -95,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBC05SQLInject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC05SQLInject" />
-      <module name="day17_jdbc" />
+    <configuration name="Loop02While" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chao.b02loop.Loop02While" />
+      <module name="day02_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.jocularchao.*" />
+          <option name="PATTERN" value="chao.b02loop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,38 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBC06NoInject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC06NoInject" />
-      <module name="day17_jdbc" />
+    <configuration name="StringAPI4CompareTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chao.a02methods.StringAPI4CompareTo" />
+      <module name="day03_string" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.jocularchao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBC07Transactions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.jocularchao.JDBC07Transactions" />
-      <module name="day17_jdbc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.jocularchao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XMLReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.jocularchao.XMLReader" />
-      <module name="day15_xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.jocularchao.*" />
+          <option name="PATTERN" value="chao.a02methods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XMLReader" />
-        <item itemvalue="Application.JDBC07Transactions" />
-        <item itemvalue="Application.JDBC06NoInject" />
-        <item itemvalue="Application.JDBC05SQLInject" />
-        <item itemvalue="Application.JDBC04ResultSet1" />
+        <item itemvalue="Application.StringAPI4CompareTo" />
+        <item itemvalue="Application.Loop02While" />
+        <item itemvalue="Application.JNITest" />
+        <item itemvalue="Application.ForkJoinPoolDemo" />
+        <item itemvalue="Application.DaemonDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -211,425 +250,496 @@
       <workItem from="1691813145495" duration="1637000" />
       <workItem from="1691827759693" duration="9756000" />
       <workItem from="1691899497374" duration="11053000" />
-      <workItem from="1691983735217" duration="2476000" />
+      <workItem from="1691983735217" duration="4413000" />
+      <workItem from="1692245910494" duration="23000" />
+      <workItem from="1692497654990" duration="1538000" />
+      <workItem from="1692801145125" duration="828000" />
+      <workItem from="1692934401331" duration="12356000" />
+      <workItem from="1693012043225" duration="2139000" />
+      <workItem from="1693183246254" duration="2207000" />
+      <workItem from="1693277764101" duration="10979000" />
+      <workItem from="1693363972016" duration="911000" />
+      <workItem from="1693452146840" duration="3292000" />
+      <workItem from="1693478478148" duration="91000" />
+      <workItem from="1693478783869" duration="7555000" />
+      <workItem from="1693538606621" duration="11460000" />
+      <workItem from="1693627091508" duration="12952000" />
+      <workItem from="1693797828278" duration="12067000" />
+      <workItem from="1693879671300" duration="8967000" />
+      <workItem from="1694748529711" duration="24000" />
+      <workItem from="1694865449658" duration="882000" />
+      <workItem from="1694916761937" duration="6685000" />
+      <workItem from="1695029804279" duration="2594000" />
+      <workItem from="1695179344451" duration="11667000" />
+      <workItem from="1695215502205" duration="26000" />
+      <workItem from="1695221753656" duration="3059000" />
+      <workItem from="1695252919597" duration="11863000" />
+      <workItem from="1695304218973" duration="1004000" />
+      <workItem from="1695353135195" duration="15624000" />
+      <workItem from="1695434700508" duration="8914000" />
+      <workItem from="1695526709207" duration="12264000" />
+      <workItem from="1695614692952" duration="15552000" />
+      <workItem from="1695692449026" duration="3988000" />
+      <workItem from="1695701243556" duration="8332000" />
+      <workItem from="1695780767519" duration="17766000" />
+      <workItem from="1695832897376" duration="1377000" />
+      <workItem from="1695869189029" duration="9007000" />
+      <workItem from="1697112465513" duration="1581000" />
+      <workItem from="1697286854528" duration="57000" />
+      <workItem from="1699246583663" duration="90000" />
     </task>
-    <task id="LOCAL-00001" summary="jar笔记">
+    <task id="LOCAL-00240" summary="目录">
       <option name="closed" value="true" />
-      <created>1689305665260</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+      <created>1695562479523</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
       <option name="project" value="LOCAL" />
-      <updated>1689305665260</updated>
+      <updated>1695562479523</updated>
     </task>
-    <task id="LOCAL-00002" summary="删除">
+    <task id="LOCAL-00241" summary="目录">
       <option name="closed" value="true" />
-      <created>1689305706895</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+      <created>1695563296336</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
       <option name="project" value="LOCAL" />
-      <updated>1689305706895</updated>
+      <updated>1695563296336</updated>
     </task>
-    <task id="LOCAL-00003" summary="jar笔记">
+    <task id="LOCAL-00242" summary="目录">
       <option name="closed" value="true" />
-      <created>1689305730788</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1695563576640</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
       <option name="project" value="LOCAL" />
-      <updated>1689305730788</updated>
+      <updated>1695563576640</updated>
     </task>
-    <task id="LOCAL-00004" summary="jar笔记">
+    <task id="LOCAL-00243" summary="目录">
       <option name="closed" value="true" />
-      <created>1689305964431</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+      <created>1695563678357</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
       <option name="project" value="LOCAL" />
-      <updated>1689305964431</updated>
+      <updated>1695563678357</updated>
     </task>
-    <task id="LOCAL-00005" summary="jar笔记">
+    <task id="LOCAL-00244" summary="线程的三个创建方式">
       <option name="closed" value="true" />
-      <created>1689305971790</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+      <created>1695617755513</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
       <option name="project" value="LOCAL" />
-      <updated>1689305971790</updated>
+      <updated>1695617755514</updated>
     </task>
-    <task id="LOCAL-00006" summary="ceshi">
+    <task id="LOCAL-00245" summary="线程状态">
       <option name="closed" value="true" />
-      <created>1689305983287</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+      <created>1695617767000</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
       <option name="project" value="LOCAL" />
-      <updated>1689305983287</updated>
+      <updated>1695617767000</updated>
     </task>
-    <task id="LOCAL-00007" summary="jar笔记">
+    <task id="LOCAL-00246" summary="成员内部类">
       <option name="closed" value="true" />
-      <created>1689307091222</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+      <created>1695619197401</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
       <option name="project" value="LOCAL" />
-      <updated>1689307091222</updated>
+      <updated>1695619197401</updated>
     </task>
-    <task id="LOCAL-00008" summary="javadoc笔记">
+    <task id="LOCAL-00247" summary="静态内部类">
       <option name="closed" value="true" />
-      <created>1689331271477</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+      <created>1695619214800</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
       <option name="project" value="LOCAL" />
-      <updated>1689331271477</updated>
+      <updated>1695619214800</updated>
     </task>
-    <task id="LOCAL-00009" summary="javadoc测试用例">
+    <task id="LOCAL-00248" summary="静态内部类">
       <option name="closed" value="true" />
-      <created>1689331289194</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+      <created>1695619926206</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
       <option name="project" value="LOCAL" />
-      <updated>1689331289194</updated>
+      <updated>1695619926206</updated>
     </task>
-    <task id="LOCAL-00010" summary="joop设计技巧">
+    <task id="LOCAL-00249" summary="局部内部类">
       <option name="closed" value="true" />
-      <created>1689331575598</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+      <created>1695635859049</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
       <option name="project" value="LOCAL" />
-      <updated>1689331575598</updated>
+      <updated>1695635859049</updated>
     </task>
-    <task id="LOCAL-00011" summary="目录">
+    <task id="LOCAL-00250" summary="匿名内部类">
       <option name="closed" value="true" />
-      <created>1689331929224</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+      <created>1695636199957</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
       <option name="project" value="LOCAL" />
-      <updated>1689331929224</updated>
+      <updated>1695636199957</updated>
     </task>
-    <task id="LOCAL-00012" summary="包、jar、javadoc">
+    <task id="LOCAL-00251" summary="lambda表达式">
       <option name="closed" value="true" />
-      <created>1689331943547</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+      <created>1695636792355</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
       <option name="project" value="LOCAL" />
-      <updated>1689331943547</updated>
+      <updated>1695636792355</updated>
     </task>
-    <task id="LOCAL-00013" summary="测试">
+    <task id="LOCAL-00252" summary="lambda表达式">
       <option name="closed" value="true" />
-      <created>1689331956038</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+      <created>1695636819042</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
       <option name="project" value="LOCAL" />
-      <updated>1689331956038</updated>
+      <updated>1695636819042</updated>
     </task>
-    <task id="LOCAL-00014" summary="继承">
+    <task id="LOCAL-00253" summary="方法引用">
       <option name="closed" value="true" />
-      <created>1689333029313</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+      <created>1695637169147</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
       <option name="project" value="LOCAL" />
-      <updated>1689333029313</updated>
+      <updated>1695637169147</updated>
     </task>
-    <task id="LOCAL-00015" summary="父类">
+    <task id="LOCAL-00254" summary="方法引用">
       <option name="closed" value="true" />
-      <created>1689417916924</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+      <created>1695637213460</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
       <option name="project" value="LOCAL" />
-      <updated>1689417916924</updated>
+      <updated>1695637213460</updated>
     </task>
-    <task id="LOCAL-00016" summary="测试">
+    <task id="LOCAL-00255" summary="方法引用">
       <option name="closed" value="true" />
-      <created>1689417927416</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+      <created>1695637274670</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
       <option name="project" value="LOCAL" />
-      <updated>1689417927416</updated>
+      <updated>1695637274670</updated>
     </task>
-    <task id="LOCAL-00017" summary="学生类">
+    <task id="LOCAL-00256" summary="delete">
       <option name="closed" value="true" />
-      <created>1689417937887</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+      <created>1695638920220</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
       <option name="project" value="LOCAL" />
-      <updated>1689417937887</updated>
+      <updated>1695638920220</updated>
     </task>
-    <task id="LOCAL-00018" summary="superclass">
+    <task id="LOCAL-00257" summary="暂停线程">
       <option name="closed" value="true" />
-      <created>1689418063845</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+      <created>1695638939845</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
       <option name="project" value="LOCAL" />
-      <updated>1689418063845</updated>
+      <updated>1695638939845</updated>
     </task>
-    <task id="LOCAL-00019" summary="student">
+    <task id="LOCAL-00258" summary="interrupt中断">
       <option name="closed" value="true" />
-      <created>1689418209846</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+      <created>1695638949766</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
       <option name="project" value="LOCAL" />
-      <updated>1689418209846</updated>
+      <updated>1695638949766</updated>
     </task>
-    <task id="LOCAL-00020" summary="superclass">
+    <task id="LOCAL-00259" summary="sleep 休眠">
       <option name="closed" value="true" />
-      <created>1689418218487</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+      <created>1695639171735</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
       <option name="project" value="LOCAL" />
-      <updated>1689418218487</updated>
+      <updated>1695639171735</updated>
     </task>
-    <task id="LOCAL-00021" summary="superclass">
+    <task id="LOCAL-00260" summary="stop 终止">
       <option name="closed" value="true" />
-      <created>1689418285656</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+      <created>1695639187531</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
       <option name="project" value="LOCAL" />
-      <updated>1689418285656</updated>
+      <updated>1695639187531</updated>
     </task>
-    <task id="LOCAL-00022" summary="学生类">
+    <task id="LOCAL-00261" summary="interrupt中断">
       <option name="closed" value="true" />
-      <created>1689423884563</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+      <created>1695639204245</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
       <option name="project" value="LOCAL" />
-      <updated>1689423884563</updated>
+      <updated>1695639204245</updated>
     </task>
-    <task id="LOCAL-00023" summary="xml笔记">
+    <task id="LOCAL-00262" summary="suspend 暂停线程">
       <option name="closed" value="true" />
-      <created>1690282934255</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+      <created>1695639235032</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
       <option name="project" value="LOCAL" />
-      <updated>1690282934255</updated>
+      <updated>1695639235032</updated>
     </task>
-    <task id="LOCAL-00024" summary="xml">
+    <task id="LOCAL-00263" summary="线程优先级">
       <option name="closed" value="true" />
-      <created>1690282939112</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+      <created>1695639244925</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
       <option name="project" value="LOCAL" />
-      <updated>1690282939112</updated>
+      <updated>1695639244925</updated>
     </task>
-    <task id="LOCAL-00025" summary="目录">
+    <task id="LOCAL-00264" summary="join 加入">
       <option name="closed" value="true" />
-      <created>1691827878306</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+      <created>1695640135167</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
       <option name="project" value="LOCAL" />
-      <updated>1691827878306</updated>
+      <updated>1695640135167</updated>
     </task>
-    <task id="LOCAL-00026" summary="java设计模式笔记">
+    <task id="LOCAL-00265" summary="yield 礼让">
       <option name="closed" value="true" />
-      <created>1691827889489</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+      <created>1695640146557</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
       <option name="project" value="LOCAL" />
-      <updated>1691827889490</updated>
+      <updated>1695640146557</updated>
     </task>
-    <task id="LOCAL-00027" summary="java设计模式笔记">
+    <task id="LOCAL-00266" summary="同步问题">
       <option name="closed" value="true" />
-      <created>1691827894089</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+      <created>1695697457990</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
       <option name="project" value="LOCAL" />
-      <updated>1691827894089</updated>
+      <updated>1695697457990</updated>
     </task>
-    <task id="LOCAL-00028" summary="jbdc jar包">
+    <task id="LOCAL-00267" summary="线程锁，">
       <option name="closed" value="true" />
-      <created>1691827905974</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+      <created>1695697463697</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
       <option name="project" value="LOCAL" />
-      <updated>1691827905974</updated>
+      <updated>1695697463697</updated>
     </task>
-    <task id="LOCAL-00029" summary="jbdc jar包">
+    <task id="LOCAL-00268" summary="线程锁，">
       <option name="closed" value="true" />
-      <created>1691838785959</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+      <created>1695697585073</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
       <option name="project" value="LOCAL" />
-      <updated>1691838785959</updated>
+      <updated>1695697585073</updated>
     </task>
-    <task id="LOCAL-00030" summary="入门JDBC">
+    <task id="LOCAL-00269" summary="suspend 暂停线程">
       <option name="closed" value="true" />
-      <created>1691847637837</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+      <created>1695698072343</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
       <option name="project" value="LOCAL" />
-      <updated>1691847637837</updated>
+      <updated>1695698072343</updated>
     </task>
-    <task id="LOCAL-00031" summary="入门JDBC">
+    <task id="LOCAL-00270" summary="死锁">
       <option name="closed" value="true" />
-      <created>1691847652849</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+      <created>1695698087239</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
       <option name="project" value="LOCAL" />
-      <updated>1691847652849</updated>
+      <updated>1695698087239</updated>
     </task>
-    <task id="LOCAL-00032" summary="笔记">
+    <task id="LOCAL-00271" summary="等待与唤醒">
       <option name="closed" value="true" />
-      <created>1691847664100</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+      <created>1695698743272</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
       <option name="project" value="LOCAL" />
-      <updated>1691847664100</updated>
+      <updated>1695698743272</updated>
     </task>
-    <task id="LOCAL-00033" summary="入门JDBC">
+    <task id="LOCAL-00272" summary="使用ThreadLocal类，来创建工作内存中的变量">
       <option name="closed" value="true" />
-      <created>1691847715349</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+      <created>1695699494339</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
       <option name="project" value="LOCAL" />
-      <updated>1691847715349</updated>
+      <updated>1695699494339</updated>
     </task>
-    <task id="LOCAL-00034" summary="入门JDBC">
+    <task id="LOCAL-00273" summary="获取class类的三种方式">
       <option name="closed" value="true" />
-      <created>1691923670638</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+      <created>1695809219162</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
       <option name="project" value="LOCAL" />
-      <updated>1691923670638</updated>
+      <updated>1695809219162</updated>
     </task>
-    <task id="LOCAL-00035" summary="DML DDL">
+    <task id="LOCAL-00274" summary="基本数据类型也有class对象">
       <option name="closed" value="true" />
-      <created>1691923689474</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+      <created>1695809228887</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
       <option name="project" value="LOCAL" />
-      <updated>1691923689474</updated>
+      <updated>1695809228887</updated>
     </task>
-    <task id="LOCAL-00036" summary="DML DDL">
+    <task id="LOCAL-00275" summary="数组类型">
       <option name="closed" value="true" />
-      <created>1691925874601</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+      <created>1695809248346</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
       <option name="project" value="LOCAL" />
-      <updated>1691925874601</updated>
+      <updated>1695809248346</updated>
     </task>
-    <task id="LOCAL-00037" summary="DQL">
+    <task id="LOCAL-00276" summary="用.class代替instanceof">
       <option name="closed" value="true" />
-      <created>1691925886725</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+      <created>1695809254246</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
       <option name="project" value="LOCAL" />
-      <updated>1691925886725</updated>
+      <updated>1695809254246</updated>
     </task>
-    <task id="LOCAL-00038" summary="批处理操作">
+    <task id="LOCAL-00277" summary="创建类对象">
       <option name="closed" value="true" />
-      <created>1691925898467</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+      <created>1695809279663</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
       <option name="project" value="LOCAL" />
-      <updated>1691925898467</updated>
+      <updated>1695809279663</updated>
     </task>
-    <task id="LOCAL-00039" summary="git忽略文件">
+    <task id="LOCAL-00278" summary="调用方法">
       <option name="closed" value="true" />
-      <created>1691926675037</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+      <created>1695809301076</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
       <option name="project" value="LOCAL" />
-      <updated>1691926675037</updated>
+      <updated>1695809301076</updated>
     </task>
-    <task id="LOCAL-00040" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+    <task id="LOCAL-00279" summary="修改类的属性">
       <option name="closed" value="true" />
-      <created>1691926690968</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+      <created>1695816959012</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
       <option name="project" value="LOCAL" />
-      <updated>1691926690968</updated>
+      <updated>1695816959012</updated>
     </task>
-    <task id="LOCAL-00041" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+    <task id="LOCAL-00280" summary="内置注解">
       <option name="closed" value="true" />
-      <created>1691926810066</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+      <created>1695817484494</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
       <option name="project" value="LOCAL" />
-      <updated>1691926810066</updated>
+      <updated>1695817484495</updated>
     </task>
-    <task id="LOCAL-00042" summary="用作查询结果映射对象 对应jdbc_test库中student表">
+    <task id="LOCAL-00281" summary="元注解与自定义注解">
       <option name="closed" value="true" />
-      <created>1691927472463</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+      <created>1695873143551</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
       <option name="project" value="LOCAL" />
-      <updated>1691927472463</updated>
+      <updated>1695873143551</updated>
     </task>
-    <task id="LOCAL-00043" summary="用作查询结果映射对象  利用反射机制优化">
+    <task id="LOCAL-00282" summary="反射与注解">
       <option name="closed" value="true" />
-      <created>1691927491877</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+      <created>1695899240931</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
       <option name="project" value="LOCAL" />
-      <updated>1691927491877</updated>
+      <updated>1695899240931</updated>
     </task>
-    <task id="LOCAL-00044" summary="忽略文件配置">
+    <task id="LOCAL-00283" summary="定时器">
       <option name="closed" value="true" />
-      <created>1691927504686</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+      <created>1695901719563</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
       <option name="project" value="LOCAL" />
-      <updated>1691927504686</updated>
+      <updated>1695901719563</updated>
     </task>
-    <task id="LOCAL-00045" summary="用作查询结果映射对象 利用反射机制优化">
+    <task id="LOCAL-00284" summary="守护线程">
       <option name="closed" value="true" />
-      <created>1691929047201</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+      <created>1695903387311</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
       <option name="project" value="LOCAL" />
-      <updated>1691929047201</updated>
+      <updated>1695903387311</updated>
     </task>
-    <task id="LOCAL-00046" summary="SQL注入">
+    <task id="LOCAL-00285" summary="ForkJoinPool 实现了并行流">
       <option name="closed" value="true" />
-      <created>1691983766391</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+      <created>1695903398228</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
       <option name="project" value="LOCAL" />
-      <updated>1691983766391</updated>
+      <updated>1695903398228</updated>
     </task>
-    <task id="LOCAL-00047" summary="SQL预编译防止sql注入">
+    <task id="LOCAL-00286" summary="目录">
       <option name="closed" value="true" />
-      <created>1691983778657</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+      <created>1695904056352</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
       <option name="project" value="LOCAL" />
-      <updated>1691983778657</updated>
+      <updated>1695904056352</updated>
     </task>
-    <task id="LOCAL-00048" summary="事务">
+    <task id="LOCAL-00287" summary="目录">
       <option name="closed" value="true" />
-      <created>1691983793738</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+      <created>1697112489581</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
       <option name="project" value="LOCAL" />
-      <updated>1691983793738</updated>
+      <updated>1697112489582</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00288" summary="内存划分">
+      <option name="closed" value="true" />
+      <created>1697286885364</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1697286885364</updated>
+    </task>
+    <option name="localTasksCounter" value="289" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="包、jar、javadoc" />
-    <MESSAGE value="继承" />
-    <MESSAGE value="父类" />
-    <MESSAGE value="测试" />
-    <MESSAGE value="student" />
-    <MESSAGE value="superclass" />
-    <MESSAGE value="学生类" />
-    <MESSAGE value="xml笔记" />
-    <MESSAGE value="xml" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="interrupt中断" />
+    <MESSAGE value="线程优先级" />
+    <MESSAGE value="join 加入" />
+    <MESSAGE value="yield 礼让" />
+    <MESSAGE value="同步问题" />
+    <MESSAGE value="线程锁，" />
+    <MESSAGE value="suspend 暂停线程" />
+    <MESSAGE value="死锁" />
+    <MESSAGE value="等待与唤醒" />
+    <MESSAGE value="使用ThreadLocal类，来创建工作内存中的变量" />
+    <MESSAGE value="获取class类的三种方式" />
+    <MESSAGE value="基本数据类型也有class对象" />
+    <MESSAGE value="数组类型" />
+    <MESSAGE value="用.class代替instanceof" />
+    <MESSAGE value="创建类对象" />
+    <MESSAGE value="调用方法" />
+    <MESSAGE value="修改类的属性" />
+    <MESSAGE value="内置注解" />
+    <MESSAGE value="元注解与自定义注解" />
+    <MESSAGE value="反射与注解" />
+    <MESSAGE value="定时器" />
+    <MESSAGE value="守护线程" />
+    <MESSAGE value="ForkJoinPool 实现了并行流" />
     <MESSAGE value="目录" />
-    <MESSAGE value="java设计模式笔记" />
-    <MESSAGE value="jbdc jar包" />
-    <MESSAGE value="笔记" />
-    <MESSAGE value="入门JDBC" />
-    <MESSAGE value="DML DDL" />
-    <MESSAGE value="DQL" />
-    <MESSAGE value="批处理操作" />
-    <MESSAGE value="git忽略文件" />
-    <MESSAGE value="用作查询结果映射对象 对应jdbc_test库中student表" />
-    <MESSAGE value="用作查询结果映射对象  利用反射机制优化" />
-    <MESSAGE value="忽略文件配置" />
-    <MESSAGE value="用作查询结果映射对象 利用反射机制优化" />
-    <MESSAGE value="SQL注入" />
-    <MESSAGE value="SQL预编译防止sql注入" />
-    <MESSAGE value="事务" />
-    <option name="LAST_COMMIT_MESSAGE" value="事务" />
+    <MESSAGE value="内存划分" />
+    <option name="LAST_COMMIT_MESSAGE" value="内存划分" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day09_common_classes/src/chao/c02math/MathDemo1.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
