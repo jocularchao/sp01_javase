@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/_07algorithm.iml" filepath="$PROJECT_DIR$/_07algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day02_sort/day02_sort.iml" filepath="$PROJECT_DIR$/day02_sort/day02_sort.iml" />
-    </modules>
-  </component>
-</project>
