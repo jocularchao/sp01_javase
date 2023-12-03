@@ -4,6 +4,7 @@
  * @author JocularChao
  * @date 2023/10/15 18:12
  * @Description 带头结点的单链表实现
+ *
  */
 public class LinkedTable <E>{
 
