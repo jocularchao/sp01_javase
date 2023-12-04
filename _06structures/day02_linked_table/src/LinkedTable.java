@@ -17,14 +17,27 @@ public class LinkedTable <E>{
     //内部静态结点类   只供内部使用
     private static class Node<E> {
 
-        E element;      //每个节点都存放一个元素
-        Node<E> next;   //指向下一个结点的引用
+        E element;
+        Node<E> next;
 
-        public Node(E element) {
+        public Node(E element){
             this.element = element;
         }
     }
 
     //插入结点
+    public void add(E element,int index) {
+        //创建前驱节点，并找到索引位置
+        Node<E> prev = head;
+        for (int i = 0; i < index; i++) {
+            prev = prev.next;
+        }
+        //到达索引位置后，创建要插入新结点
+        Node<E> node = new Node<>(element);
+
+        prev = node.next;
+
+
+    }
 
 }
