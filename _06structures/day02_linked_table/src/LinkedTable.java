@@ -37,7 +37,5 @@ public class LinkedTable <E>{
 
         prev = node.next;
 
-
     }
-
 }
