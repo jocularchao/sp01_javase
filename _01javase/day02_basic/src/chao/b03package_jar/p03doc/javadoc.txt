@@ -1,0 +1,25 @@
+/**
+ *
+ *
+ */
+
+1、以上格式为文档注释 标记以@开始 @param @since ..
+可以使用html的修饰符对文档进行修饰
+
+2、通用标记
+@param  参数
+@return 返回部分
+@throws 抛出的异常
+
+@since txt
+产生文档链接
+@see top.jocularchao.p01import.JocularChao#main(String[])
+@see top.jocularchao.p01import.JocularChao#text
+
+
+3、包注释
+在package上
+
+
+4、注释抽取
+javadoc -d docJocularChao -encoding UTF-8 -charset UTF-8 *.java

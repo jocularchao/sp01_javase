@@ -1,0 +1,45 @@
+jar文件用zip压缩格式 包含类或图像声音等类型文件
+
+1、创建jar文件
+jar cvf Employee.jar .\C01Employee.java
+
+cvf
+c 创建新的或空的存档文件  指定文件名为目录 jar程序将对他们进行递归处理
+f 指定jar文件名为第二个命令行参数
+i 建立索引文件
+m 将一个清单文件添加到jar文件中 清单是对归档内容和来源的一个说明
+每个归档有一个默认的清单文件 但，想验证清单文件就提供自己的清单文件
+v 生成详细的输出结果
+
+M 不为条目创建清单文件
+t 显示内容表
+u 更新一个已有的jar文件
+v 生成详细的输出结果
+x 解压文件。如果提供一个或多个文件名，只解压这些文件；佛则，解压所有文件
+0 存储，但不进行zip压缩
+
+
+2、除了类文件、图像和其他资源外，每个jar文件还包含一个清单文件-manifest，用于扫描归档文件的特殊性
+其文件 MANIFEST.MF 在META-INF目录中
+其内容：
+Manifest-Version: 1.0
+Created-By: 1.8.0_25 (Oracle Corporation)
+
+编辑清单文件
+jar cfm [jarFileName] [manifestFileName] . . .
+jar cfm Employee.jar MANIFEST.MF top/jocularchao/p01import/*.class
+更新一个已有的jar文件
+jar ufm Employee.jar MANIFEST-additions.MF
+
+
+3、可执行jar文件
+jar 的 e选项指定程序入口点
+jar cvfe Employee.jar top.jocularchao.JocularChaoClass files to add
+
+启动
+java -jar Employee.jar
+
+4、多版本jar文件
+为了解决不同版本jar冲突的问题java9 引入了多版本JAR，其包含面向不同java版本的类文件
+为了保证向后兼容，额外的类文件放入只有java9识别的 META-INF/versions中
+
